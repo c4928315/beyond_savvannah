@@ -1,0 +1,90 @@
+.fireBaseForm{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: fit-content;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #2c555c;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    position: relative;
+}
+
+.errorSMSContainer{
+    position: absolute;
+    top: 5%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.errorSMS{
+    width: 40%;
+    margin: auto;
+    background-color: rgba(255, 0, 0, 0.3);
+    text-align: center;
+    height: 80px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    font-weight: 600;
+    font-size: 18px
+}
+
+.fireBaseForm input{
+    height: 50px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+.fireBaseForm button{
+    height: 50px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding-left: 20px;
+    font-weight: 500;
+    background-color: #cd8a6e;
+    text-transform: uppercase;
+    color: white;
+}
+
+.fireBaseForm h2{
+    color: #cd8a6e;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.options{
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.options b{
+    color: #cd8a6e;
+    cursor: pointer;
+}

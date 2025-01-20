@@ -1,0 +1,204 @@
+.chatRoomMain{
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    justify-content: baseline;
+}
+
+.chatVid{
+    width: 70%;
+    height: 100%;
+    margin: 30px;
+    
+}
+
+.vid{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 20px;
+}
+
+.chatArea{
+    background-color: white;
+    height: 90%;
+    width: 30%;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    margin-right: 20px;
+    position: relative;
+    border: 1px solid rgba(128, 128, 128, 0.7);
+    /* padding-top: 10px; */
+    
+    
+   
+}
+
+.messageConatiner1{
+    padding: 10px 20px;
+}
+
+.chat-window{
+    height: 90%;
+    width: 100%;
+    overflow: auto;
+}
+
+.chartForm{
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    right: 10px;
+}
+
+.message{
+    color: black;
+    margin: 15px 0;
+}
+
+.textSMS{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 6px 0;
+    padding-left: 20px;
+}
+
+.topChatAre{
+    border-bottom: 1px solid black;
+    padding: 10px 0 0 30px;
+}
+
+.topChatArePtag{
+    font-weight: 500;
+    color: black;
+}
+
+.inputArea input{
+    padding: 8px 10px;
+    width: 75%;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.7);
+    outline: none;
+}
+
+.inputArea{
+    display: flex;
+    gap: 10px;
+}
+
+.btnSendEmoji{
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.7);
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emojiPicker{
+    position: absolute;
+    bottom: 125%;
+}
+
+.abbriviation{
+    color: "white" !important;
+    margin-right: 10px;
+    background-color: lightgray;
+    border-radius: 50%;
+    /* height: 40px; */
+    padding: 6px;
+}
+
+.question{
+    color: gray;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15.2px;
+}
+
+.answer{
+    color: black;
+    font-weight: 400;
+}
+
+.question em{
+    font-weight: 500;
+    color: black;
+    font-size: 14px;
+}
+.answer em{
+    font-weight: 500;
+    color: gray;
+    font-size: 14px;
+}
+
+.headerPtag{
+    text-transform: capitalize;
+    color: black;
+    font-weight: 500;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.dropdownBtn{
+    background-color: black !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.dropdownBtnToggle{
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid black !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-item{
+    width: 93% !important;
+    margin: auto;
+    border-radius: 5px !important;
+    font-size: 14px;
+    
+}
+
+.diff .active{
+    background-color: black !important;
+}
+
+.socialMedia{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.mainSocialMedia{
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    padding: 8px 30px;
+    border-radius: 5px;
+}
+
+.logoVideo{
+    width: 60px;
+    height: 60px;
+    filter: brightness(80%);
+    cursor: pointer;
+}
+
+.logoVideoContainer{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.mainSocialMedia .footerSocialIcons{
+    border: none !important;
+}

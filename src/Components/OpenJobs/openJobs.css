@@ -1,0 +1,189 @@
+.openPositions {
+  height: fit-content;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 4em;
+}
+
+.openPositionsTopContentContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  height: 20vh;
+  padding: 120px 0 60px 0;
+  background-color: var(--light-jungle-green);
+  margin-bottom: 3.5em;
+}
+
+.openPositionsHeader h2 {
+  color: white;
+  font-size: 2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+  font-family: 'Trirong', serif;
+}
+
+
+
+.openPositionsHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.openPositionsSubheader p{
+    color: #b48e41;
+    letter-spacing: 0.025em;
+    font-weight: 300;
+    font-family: sans-serif;
+}
+
+.nav-tabs-openJobs-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none !important;
+}
+
+.nav-tabs-openJobs{
+    display: flex !important;
+    gap: 30px !important;
+    border: none !important;
+}
+
+.nav-tabs-openJobs .nav-link{
+    background-color: transparent !important;
+    border: 1px solid #b48e41;
+    color: #b48e41;
+    border-radius: 14px !important;
+    font-weight: 600;
+    transition: color background-color 0.3s ease-in-out;
+    padding-top: 5% !important;
+    padding-bottom: 5% !important;
+
+}
+
+.nav-tabs-openJobs .nav-link:hover{
+    background-color: #b48e41 !important;
+    color: white !important;
+}
+
+.nav-tabs-openJobs .active{
+    background-color: #b48e41 !important;
+    color: white !important;
+}
+
+.tab-content-openJobs{
+    border: none !important;
+}
+
+.seeAllOpenings{
+    padding-left: 2%;
+}
+
+.seeAllOpenings a{
+    font-weight: 500;
+    color: var(--jungle-green);
+    text-decoration: underline;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: capitalize;
+    transition: color 0.3s ease-in-out;
+}
+
+.nojobsPhrase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--loginLeft-bg);
+}
+
+.nojobsPhraseInner{
+    text-align: center;
+    
+}
+
+.nojobsPhraseIconHolder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nojobsPhraseIcon{
+    background-color: rgba(44, 85, 92, 0.1);
+    border-radius: 50%;
+    padding: 18%;
+    width: 50%;
+    height: fit-content;
+}
+
+.nojobsPhraseHeader{
+    font-size: 1.29em;
+    color: rgba(27, 27, 27, 0.8);
+    font-weight: 300;
+    margin-top: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.nojobsPhraseP{
+    font-size: 0.9em;
+    color: var(--light-jungle-green);
+    font-weight: 100;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 736px) {
+    .seeAllOpenings{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .openPositionsHeader h2{
+        font-size: 1em;
+        font-weight: 500;
+        margin-bottom: 0.7em;
+    }
+
+    .openPositionsSubheader{
+        width: 100%;
+    }
+
+    .openPositionsSubheader{
+        width: 100%;
+    }
+
+    .openPositionsSubheader p{
+        text-align: center;
+        font-size: 0.6em;
+        font-family: sans-serif;
+        width: 86.7%;
+        margin: auto;
+        margin-top: 0.4em;
+    }
+
+    .openingsTabs{
+        padding-top: 0em;
+    }
+
+    .openPositionsTopContentContainer{
+        margin: 0;
+        height: 22%;
+        padding-top: 50px;
+        padding-bottom: 18px;
+    }
+
+    .nav-tabs-openJobs .nav-link{
+        font-weight: 400;
+        font-size: 0.8em;
+    }
+
+    .openPositionsBottomContent{
+        margin-top: 2em;
+    }
+  }

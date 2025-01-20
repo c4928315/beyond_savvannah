@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+
+:root {
+    --light-blue: #e2dbd3;
+    --jungle-green: rgb(28, 54, 58);
+    --light-jungle-green: #2c555c;
+    --light-light-blue: rgba(227, 220, 212, 0.6);
+    --light2-light-blue: #e2dbd3;
+    --light2-light-blue: rgba(226, 219, 211, 0.1);
+    --light-gray: #767676;
+    --light-light-gray: rgba(118, 118, 118, 0.2);
+    --blue: rgb(44, 85, 92);
+    --light-blue-shadow: #c4958599;
+    --dark-blue: #9d7367;
+    --boxShadow-blue: rgba(3, 75, 174, 0.4);
+    --deep-blue: #021d93;
+    --secondary-text: #515151;
+    --secondary-text-thin: rgba(81, 81, 81, 0.2);
+    --secondary-text-thin-post: rgba(81, 81, 81, 0.5);
+    --twitter-bg: #bc91e8;
+    --linkedin-bg: #0077b5;
+    --pinterest-bg: #d93025;
+    --loginLeft-bg: #f1f1f1;
+    --main-font: 'Trirong', serif;
+    --bold: #b48e41;
+}
+
+.btnScrollTop{
+    border: 2px solid white;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    background-color: var(--blue);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    cursor: pointer;
+}
+
+.paginationBTN{
+    color: var(--jungle-green);
+    border: 1px solid var(--jungle-green);
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.paginationBTN:hover{
+    color: var(--jungle-green);
+}
+
+.pagination .active .page-link{
+    border-radius: 50% !important;
+    background-color: var(--jungle-green) !important;
+    border: none !important;
+}
+
+
+.paginationBTN2{
+    color: var(--jungle-green);
+    border: 1px solid var(--jungle-green);
+    transition: all 0.3s;
+}
+
+.paginationBTN2:hover{
+    color: var(--jungle-green);
+}
+

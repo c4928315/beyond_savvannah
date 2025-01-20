@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,600&display=swap');
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* body {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	font-family: 'Raleway', sans-serif;
+	background: #f2f2f2;
+	overflow-x: hidden;
+	z-index: 1;
+	display: flex;
+} */
+
+.postJob{
+    position: relative;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+#MenuToggle {
+	display: none;
+	/* position: absolute;
+ top: 30px;
+ left: 350px; */
+}
+
+
+/* Left */
+
+.sidebar {
+	position: sticky;
+	width: 250px;
+	height: 100%;
+	background: white;
+    border: 1px solid black;
+	opacity: 1;
+    top: 0;
+    bottom: 0;
+	transform: translateX(0);
+	transition: all .8s ease;
+}
+
+
+/* For Navbar */
+
+.logo {
+	display: block;
+	font-size: 1.2em;
+	font-weight: 700;
+	text-align: center;
+	letter-spacing: .3px;
+	padding: 20px 0px;
+	width: 100%;
+	background: black;
+    color: white;
+}
+
+
+.sidebar .nav-tabs {
+	width: 100%;
+	position: absolute;
+	top: 27%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+   
+}
+
+.sidebar .nav-tabs a {
+	display: block;
+	padding: 1.8em;
+	font-size: 0.8em;
+	font-weight: 500;
+	text-align: left;
+	transition: all .4s ease;
+    color: black;
+}
+
+.logoLink{
+	padding: 0;
+}
+
+.sidebar .nav-tabs a:hover,
+.sidebar .nav-tabs a.active {
+	background: var(--secondary-text-thin);
+}
+
+.sidebar .nav-tabs{
+    display: block !important;
+    top: 24%;
+}
+
+
+/* Right */
+
+.right {
+	position: relative;
+	width: calc(100% - 250px);
+	height: 100%;
+	overflow-x: hidden;
+	display: flex;
+	transition: all .8s ease;
+}
+
+.content {
+	width: 100%;
+}
+
+.content h2 {
+	font-size: 60px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .3px;
+	color: #000831;
+	text-align: center;
+}
+
+
+/* Toggle bar */
+
+.toggle__icon {
+	position: absolute;
+	top: 24px;
+	left: 30px;
+	cursor: pointer;
+}
+
+.toggle__icon .line {
+	width: 24px;
+	height: 3px;
+	background-color: #000831;
+	margin: 6px 0;
+	display: block;
+	border-radius: 8px;
+}
+
+
+#MenuToggle:checked~.sidebar {
+	width: 0;
+	transform: translateX(-250px);
+}
+
+#MenuToggle:checked~.right {
+	width: 100%;
+}
+

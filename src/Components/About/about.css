@@ -1,0 +1,185 @@
+.aboutMain{
+    background-color: #fff4ee;
+    height: 145vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutContainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 3em;
+    gap: 4em;
+    justify-content: space-between;
+}
+
+.aboutImageBox{
+    background-image: url("https://i.postimg.cc/W3v5p67G/DSC-0760-copy.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    border-radius: 3%;
+    margin-bottom: 2em;
+}
+.aboutImageBox2{
+    background-image: url("https://i.postimg.cc/3W553DWz/DSC-0791-copyv.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    border-radius: 3%;
+}
+
+.aboutRight, .aboutLeft{
+    width: 43%;
+}
+
+.aboutRight h1, .aboutLeft h1{
+    font-family: 'Trirong', serif;
+    font-weight: 500;
+    font-size: 2em;
+    color: var(--jungle-green);
+}
+
+.aboutRight p, .aboutLeft p{
+    font-family: sans-serif;
+    font-weight: 300;
+    
+}
+.aboutRight p{
+    margin-bottom: 2em;
+}
+
+.aboutRight h4{
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    color: var(--jungle-green);
+}
+
+.aboutMainBtn{
+    width: 100%;
+    height: 3em;
+    padding: 8px 3em;
+    margin-bottom: 15em;
+}
+
+.aboutBtnContainer{
+    margin-bottom: 5% !important;
+    width: 20% !important;
+    background-color: var(--jungle-green);
+    color: white;
+    width: fit-content;
+    padding: 10px 10px;
+    border-radius: 6px;
+    display: flex;
+    gap: 6%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.aboutMainBtn a{
+    color: white;
+    padding: 1%;
+    font-size: 0.9em;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+.video{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100000;
+    background: linear-gradient(rgb(0, 0, 0, 0.89), rgb(0, 0, 0, 0.89));
+}
+
+.innerVideo{
+    height: 90vh;
+    position: relative;
+}
+
+.innerVideo a{
+    position: absolute;
+    left: 2%;
+    top: 2%;
+    text-decoration: underline;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+@media screen and (min-width: 320px) and (max-width: 736px) {
+
+    .innerVideo{
+        height: 100vh;
+    }
+
+    .aboutImageBox, .aboutImageBox2{
+        height: 35vh;
+    }
+
+    .aboutRight h1, .aboutLeft h1{
+        font-size: 1em;
+        margin-bottom: 0.3em;
+        text-decoration: underline;
+    }
+
+    .aboutImageBox{
+        margin-bottom: 1em;
+    }
+
+    .aboutContainer{
+        gap: 1.1em;
+        padding: 3em 3%;
+        padding-bottom: 0;
+        justify-content: normal;
+    }
+
+    .aboutRight h4{
+        font-size: 0.55em;
+        font-weight: 600;
+        width: 100%;
+    }
+
+    .aboutRight p{
+        font-size: 0.6em;
+        font-family: sans-serif;
+    }
+
+    .aboutLeft p{
+        font-size: 0.6em;
+        font-family: sans-serif;
+        margin-top: 1em;
+    }
+
+    .aboutBtnContainer{
+        width: 55% !important;
+       
+    }
+
+    .aboutMainBtn{
+        padding: 4em 0.7em;
+    }
+
+    .aboutMain{
+        height: fit-content;
+    }
+
+    .aboutMainBtn{
+        height: 0.9em;
+        margin-bottom: 0em;
+    }
+
+    .aboutMainBtn a{
+        font-size: .7em;
+        font-weight: 600;
+    }
+}

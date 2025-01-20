@@ -1,0 +1,167 @@
+export const data = [
+    {
+      id: 1,
+      question: "What is an ATS CV ?",
+      answer: "This is a CV that bypasses the Applicant tracking system that recruiters use to filter hundreds of applications ",
+      name: "James",
+    },
+    {
+      id: 2,
+      question: "I have a laptop and stable internet, help me with a job",
+      answer: "We have a two hour master class that is suited for people new to remote working ",
+      name: "Joshua",
+    },
+    {
+      id: 3,
+      question: "I am new to remote work, where do I start?",
+      answer: "We suggest starting with our master class as this covers the basics you need to know about remote working ",
+      name: "Hannah",
+    },
+    {
+      id: 4,
+      question: "Do you assist people in looking for Jobs?",
+      answer: " Yes we do, and here's how. On our website we have listed prevetted jobs hiring worldwide, Africa and EMEA timezones. Head on over to our website: www.beyondthesavannah.com and apply",
+      name: "Christopher",
+    },
+    {
+      id: 5,
+      question: "What is remote working?",
+      answer: " Remote working is having a typical 9-5 job, without location restrictions ",
+      name: "Amanda",
+    },
+    {
+      id: 6,
+      question: "Do you guarantee jobs after purchasing your services?",
+      answer: "We do not guarantee jobs for clients as it is purely their efforts to consistently apply for them after working on their CV",
+      name: "Andrew",
+    },
+    {
+      id: 7,
+      question: "What is an ATS CV ?",
+      answer: "This is a CV that bypasses the Applicant tracking system that recruiters use to filter hundreds of applications ",
+      name: "Rachel",
+    },
+    {
+      id: 8,
+      question: "I have a laptop and stable internet, help me with a job",
+      answer: "While a stable internet and a laptop are tools for remote working, we suggest checking our website for remote work opportunities ",
+      name: "Jessica",
+    },
+    {
+      id: 9,
+      question: "Are the jobs on your website, legit?",
+      answer: "Yes, we pre-vet the jobs we list on our website before uploading them",
+      name: "Richard",
+    },
+    {
+      id: 10,
+      question: "Do you help people apply for jobs ",
+      answer: "We help you get your tools in order like CV and LinkedIn, but you apply for the jobs. ",
+      name: "Megan",
+    },
+    {
+      id: 11,
+      question: "What would you advise a recent graduate or school drop out looking to get into remote working?",
+      answer: "We suggest that you master a skill or upskill in order to match up remote working standards.",
+      name: "Robert",
+    },
+    {
+      id: 12,
+      question: " I have over 30 years of work experience, will this limit me from having a remote job?",
+      answer: "Absolutely not! On our website, we showcase several jobs in the senior to C-suite working levels",
+      name: "Matthew",
+    },
+    {
+      id: 13,
+      question: "Are there any internships and part time remote jobs?",
+      answer: "Absolutely! However there are few, but there are there",
+      name: "Laura",
+    },
+    {
+      id: 14,
+      question: "Would you advice me to get a CV revamp alone?",
+      answer: "We recommend both, since a recruiter will check your LinkedIn if they are interested in you ",
+      name: "Robert",
+    },
+    {
+      id: 15,
+      question: "Do you have a package that includes all your services together?",
+      answer: "All services are charged individually as indicated on our website",
+      name: "Ashley",
+    },
+    {
+      id: 16,
+      question: "What does the master class entail?",
+      answer: "Our master class is a two hour class that covers the basics of remote working. Best suited for a beginner",
+      name: "Daniel",
+    },
+    {
+      id: 17,
+      question: "what courses would you advice someone to take in order to upskill",
+      answer: "In order to advice you properly, we advice purchasing our consultation package",
+      name: "Jennifer",
+    },
+    {
+      id: 18,
+      question: "Do you connect people with jobs?",
+      answer: "We only list jobs on our website for clients to apply and do not connect them with said jobs",
+      name: "Samantha",
+    },
+    {
+      id: 19,
+      question: "Do you offer payment plans",
+      answer: " Due to the nature of our quick turnaround services, we unfortunately don't, and require upfront full payment to initiate service delivery",
+      name: "Thomas",
+    },
+    {
+      id: 20,
+      question: "Do you offer discounts?",
+      answer: "oh yes! We offer discounts on selected months, so be on the look out on our social media pages ",
+      name: "William",
+    },
+    {
+      id: 21,
+      question: "Do you walk with clients in the remote work journey",
+      answer: "Unfortunately at the moment, due to capacity reasons we cannot walk with you until you land a job. We would love to but it isn't feasibley ",
+      name: "Elizabeth",
+    },
+    {
+      id: 22,
+      question: "Do you offer client mentorship programs?",
+      answer: "We currently do not have that capacity, but if any opportunities come up, we will put out that information.",
+      name: "Emily",
+    },
+    {
+      id: 23,
+      question: "Who is entitled to the students package ",
+      answer: " clients who are recent graduates or ongoing students in their  first degree, diploma and certificate",
+      name: "David",
+    },
+    {
+      id: 24,
+      question: " I only have a diploma, do I qualify for these remote jobs",
+      answer: "Absolutely! Most of these jobs if not all, require working experience and some education background that isn't necessarily a degree",
+      name: "Sarah",
+    },
+    {
+      id: 25,
+      question: "Can you check for me if my CV is ATS friendly?",
+      answer: "Sure! Send your CV to info@beyondthesavannah.co.ke for a free audit ",
+      name: "Michael",
+    },
+    {
+      id: 26,
+      question: "Are you active on LinkedIn?",
+      answer: "Yes we are, also on Facebook, X, Instagram,youtube and your favourite clock app, tiktok!",
+      name: "Mary",
+    },
+    {
+      id: 27,
+      question: "Is your company legit?",
+      answer: "Tested, approved and trusted! Check our success stories on YouTube and reviews on our social media platforms!",
+      name: "John",
+    },
+  ];
+
+
+  // NODE_OPTIONS="--max-old-space-size=8192" npm run build

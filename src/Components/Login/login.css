@@ -1,0 +1,463 @@
+.loginContainer {
+  padding: 1%;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  gap: 1%;
+}
+
+.loginLeft {
+  width: 50%;
+  border-radius: 12px;
+  height: 100%;
+  display: flex;
+  gap: 1%;
+  flex-direction: column;
+}
+
+.loginUsers {
+  height: 10%;
+  width: 100%;
+  background-color: var(--loginLeft-bg);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 30px;
+}
+
+.loginBrand h4 {
+  font-weight: 400;
+  font-size: 1.3em;
+  color: var(--light-gray);
+  text-transform: uppercase;
+}
+
+.loginBrand {
+  margin-bottom: 4%;
+}
+
+.loginHeader h1 {
+  width: 65%;
+  font-weight: 400;
+  font-size: 1.8em;
+}
+
+.signUpMainHeaderCo h1 {
+  width: 100%;
+  font-weight: 400;
+  font-size: 1.7em;
+  text-align: center;
+  color: var(--blue);
+}
+
+.loginP p {
+  font-size: 14px;
+  color: black;
+  width: 90%;
+  color: var(--light-gray);
+}
+
+.loginP2{
+  width: 100% !important;
+}
+
+.loginP2 p{
+  text-align: center !important;
+}
+
+.loginP {
+  margin-top: 20px;
+}
+
+.loginLeftInner {
+  width: 100%;
+  padding: 5% 0;
+  height: 90%;
+  border-radius: 12px;
+  background-color: var(--loginLeft-bg);
+}
+
+.loginLeftPosition {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.loginForm {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.loginForm form {
+  width: 90%;
+}
+
+.loginForm form input::placeholder {
+  color: var(--light-gray);
+  font-size: 15px;
+  font-style: italic;
+}
+
+.loginForm form input:focus {
+  outline: none;
+  border: none;
+}
+
+.loginInputsContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+  border-radius: 30vh;
+  outline: none;
+  border: none;
+  margin-bottom: 7%;
+  border: 1px solid rgb(211, 211, 211, 0.5);
+  background-color: white;
+  padding: 0 30px;
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+
+.loginInputsContainer:focus-within {
+  box-shadow: 0 0 5pt 0.5pt var(--boxShadow-blue);
+}
+
+.loginInputsContainer span {
+  width: 10%;
+  color: rgb(157, 157, 157);
+}
+
+.loginInputsContainer input {
+  width: 90% !important;
+  height: 45px;
+  margin: 0;
+  border: none;
+  padding: 5px;
+  font-weight: 200 !important;
+}
+
+.mainSignUpFormDiv{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.signUpInput{
+  height: 45px;
+  border: 1px solid rgb(166, 166, 166);
+  padding: 5px;
+  font-weight: 200 !important;
+  width: 90%;
+  height: 45px;
+  border-radius: 12px;
+  
+}
+
+.signUpInputReal{
+  margin-top: 3%;
+}
+
+#gsi_416034_865027, .nsm7Bb-HzV7m-LgbsSe-MJoBVe, .haAclf, .qJTHM{
+  width: 100% !important;
+}
+
+.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-MJoBVe{
+  width: 500px !important;
+}
+
+.signUpInputBtn{
+  background-color: var(--blue);
+  color: white;
+  text-transform: capitalize;
+}
+
+.loginFormBtnContainer {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.loginBtn {
+  width: 100%;
+}
+
+.loginFormBtnContainer .loginBtn {
+  width: 100%;
+  height: 45px !important;
+  border-radius: 30vh;
+  border: none;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.loginBtn1 {
+  background-color: var(--blue);
+  color: white;
+}
+
+.loginBtn2 {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black !important;
+  background-color: white;
+}
+
+.loginOr {
+  width: 100%;
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 45px;
+  padding: 10px 0;
+}
+
+.loginOr p {
+  position: absolute;
+  font-weight: 100;
+  font-size: 15px;
+  background-color: var(--loginLeft-bg);
+  height: 20px;
+  width: 20px;
+  top: 25%;
+  left: 50%;
+  z-index: 20;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.signUpPLine{
+  color: black !important;
+  background-color: white !important;
+  font-weight: 400 !important;
+}
+
+.signUpLine{
+  height: 0.092em !important;
+  background-color: rgb(166, 166, 166) !important;
+  width: 90% !important;
+}
+
+.loginLine {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.loginOr2 {
+  width: 100%;
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 45px;
+  padding: 10px 0;
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+  }
+
+.inquiry {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: 100%;
+  padding-top: 7%;
+}
+
+.inquiry p {
+  font-size: 13px;
+}
+
+.inquiry p b {
+  color: var(--blue);
+  font-style: italic;
+}
+
+.loginUserImg {
+  height: 50px;
+  width: 50px;
+  border: 2px solid var(--loginLeft-bg);
+  border-radius: 50%;
+}
+
+.loginUserImg img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: fill;
+}
+
+.loginUserImgContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: fit-content;
+}
+
+.loginUserImgAb1 {
+  position: absolute;
+  left: 60%;
+}
+
+.loginUserImgAb2 {
+  position: absolute;
+  left: 120%;
+}
+
+.loginUsersInner {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+
+.loginUsersInnerText h5 {
+  font-size: 15px;
+  margin: 0;
+}
+
+.loginUsersInnerIcon {
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.loginUsersInnerText p {
+  font-size: 13px;
+  margin: 0;
+  color: var(--light-gray);
+}
+
+.loginUsersInnerText {
+}
+
+.loginRight {
+  background: url(../../../public/background.jpg);
+  height: 100%;
+  width: 50%;
+  border-radius: 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.MainSignUp{
+  display: flex;
+  width: 100%;
+  gap: 2em;
+  height: 100vh;
+  padding: 2.2em 2em;
+}
+
+.signUpLeft{
+  width: 50%;
+  padding: 0 1em;
+}
+
+.signUpRight{
+  width: 50%;
+}
+
+.signUpRight{
+  background-image: url(../../Assets/Component\ 9.png);
+  border-radius: 12px;
+  border: 1px solid rgb(0, 0, 0, 0.3);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* LOGIN QUEARY */
+@media screen and (min-width: 320px) and (max-width: 736px) {
+  .loginContainer {
+    flex-direction: column !important;
+    height: 100vh;
+    padding: 3%;
+  }
+
+  .loginBrand h4{
+    margin-bottom: 1em;
+  }
+
+  .loginLeft {
+    width: 100%;
+    gap: 0%;
+    height: 100%;
+    padding: 2% 0;
+  }
+  
+  .loginUsersInnerIcon{
+    font-size: 0em;
+    height: 30px;
+    width: 30px;
+  }
+
+  .loginRight {
+    width: 100%;
+    display: none;
+  }
+
+  .loginUsers {
+    margin-top: 3%;
+    height: 10%;
+  }
+
+  .loginHeader h1{
+    width: 100%;
+    font-size: 1.5em;
+  }
+
+  .loginP p{
+    width: 100%;
+  }
+
+  .loginLeftPosition{
+    width: 90%;
+    padding-top: 10%;
+    margin: 0 auto;
+  }
+
+  .loginForm form{
+    width: 100%;
+  }
+
+  .loginUsersInnerText p{
+   display: none;
+  }
+
+  .loginUsersInnerText h5{
+    font-size: 0.7em;
+    font-weight: 500;
+   }
+
+   .loginUserImg{
+    height: 2.5em;
+    width: 2.5em;
+   }
+
+   .loginP p{
+    font-size: 0.8em;
+   }
+   
+   .signUpRight{
+    display: none;
+   }
+
+   .signUpLeft{
+    width: 100%;
+    padding-top: 2.6em;
+   }
+}
+/* LOGIN QUEARY */

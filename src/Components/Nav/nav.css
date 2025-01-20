@@ -1,0 +1,385 @@
+.navContainer{
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background-color: red !important;
+    z-index: 500;
+}
+
+/* .bg-body-tertiary{
+    background-color: white !important;
+} */
+
+.logoImg{
+    height: 95px;
+    margin: 0;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    bottom: -730%;
+}
+
+
+.logoImgUp{
+    height: 85px;
+    margin: 0;
+    position: absolute;
+    top: -400%;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+@keyframes logoUpEntry {
+    from {
+        opacity: 0;
+        top: -200%;
+    }
+    to{
+        opacity: 1;
+        top: -400%;
+    }
+}
+
+.logoUpEntry{
+    animation: logoUpEntry 0.3s forwards;
+}
+
+.navbar-brand{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: fit-content;
+    width: 2em !important;
+    gap: 0.4em;
+}
+
+.logoBox{
+    border: 2px solid var(--jungle-green);
+    color: var(--jungle-green);
+    height: 2em;
+    width: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4%;
+    
+}
+
+.logoBox h3{
+    font-family: serif;
+    margin: 0;
+    font-size: 1em;
+}
+
+.logoCircle{
+    background-color: rgba(255, 255, 250);
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+}
+
+.navbar-brand h5{
+    z-index: 2;
+    position: relative;
+    color: var(--jungle-green);
+    font-size: 0.4em;
+    font-weight: 400;
+    font-family: serif;
+}
+
+/* .navbar-brand img{
+    height: 3.4em;
+    width: fit-content;
+} */
+
+.mainNavItem {
+  display: inline-block !important;
+  font-size: 16px !important;
+  font-weight: 200 !important;
+  padding: 12px 0 !important;
+  
+}
+
+.navbar-brand{
+    width: 200px !important;
+}
+
+.mainNavCollapse{
+    position:  relative !important;
+    flex-grow: 0.7 !important;
+}
+
+.navbar{
+   height: fit-content !important;
+   margin: 0 !important;
+}
+
+.notifications{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    color: var(--jungle-green);
+}
+
+.mainNavCollapseItems{
+    display: flex ;
+    gap: 15px ;
+}
+
+.mainNavCollapseItems a{
+    color: var(--jungle-green) !important;
+    font-weight: 400;
+}
+
+.newJobSignContainer, .findJobContainer{
+    position: relative !important;
+}
+
+.newJobSign{
+    color: white;
+    background-color: var(--jungle-green);
+    position: absolute;
+    clip-path: polygon(0% 12%, 100% 12%, 100% 60%, 60% 60%, 56% 80%, 78% 60%, 0% 60%);
+    padding: 5px;
+    top: -10%;
+    right: 10%;
+    
+}
+
+.newJobSign p{
+    font-size: 11px;
+}
+
+.nav-item-dropdown{
+    position: absolute;
+    width: 200px;
+    background-color: white;
+    left: 10%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    top: 120%;
+    border-top: 3px solid var(--jungle-green);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    height: 0px;
+    overflow: auto;
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 0.3s ease, height 0.3s ease;
+}
+
+.findJobContainer:hover .nav-item-dropdown {
+    opacity: 1;
+    height: fit-content;
+  }
+
+.nav-item-dropdown ul{
+    list-style: none;
+    padding: 20px 0;
+    line-height: 30px;
+    position: relative;
+}
+
+.comOb{
+    position: absolute;
+    right: 0;
+}
+
+.nav-item-dropdown ul li a{
+    color: var(--jungle-green);
+    font-size: 0.9em;
+    text-transform: capitalize;
+    font-weight: 300;
+    transition: background-color 0.3s ease-in-out;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.nav-item-dropdown ul li:hover{
+    background-color: rgba(3, 75, 174, 0.15);
+}
+
+.pointer{
+    clip-path: polygon(50% 60%, 0% 100%, 100% 100%);
+    background-color: var(--jungle-green);
+    color: var(--jungle-green);
+    position: absolute;
+    padding: 10px;
+    top: 90%;
+    left: 30%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.findJobContainer:hover .pointer {
+    opacity: 1;
+  }
+
+/* .serviceLink{
+    
+} */
+
+
+.subDropDown{
+    position: absolute;
+    top: 250%;
+    left: 212.5%;
+    background-color: white;
+    border-radius: 6px;
+    width: 200px;
+    overflow: hidden;
+    padding: 0 !important;
+    display: none;
+    border-left: 5px solid rgb(225, 198, 191);
+}
+
+.subDropDown.visible {
+    display: block;
+  }
+
+.subDropDownInner{
+    width: 200px;
+    margin: 0;
+    padding: 1em
+}
+
+.subDropDownInner li{
+    list-style: none;
+    margin: 0;
+}
+
+.subDropDownInner li a{
+    color: var(--jungle-green);
+    font-size: 0.9em;
+    text-transform: capitalize;
+    font-weight: 300;
+    transition: background-color 0.3s ease-in-out;
+    padding: 0.3em;
+    cursor: pointer;
+}
+
+.subDropDownInner ul li:hover{
+    background-color: rgba(3, 75, 174, 0.15);
+}
+
+.navContainer {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+/* nav.css */
+  
+  .navContainer.scrolled {
+    background-color: #f8f9fa; /* Change background color when scrolled */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow on scroll */
+  }
+  
+  .navbar.scrolled-nav {
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+
+  .displayNone{
+      display: none;
+  }
+  
+
+  @media screen and (min-width: 320px) and (max-width: 736px) {
+    .mainNavContainer .show{
+        display: flex !important;
+        justify-content: left !important;
+    }
+    
+    .mainNavCollapseItems .mainNavItem a{
+        display: flex !important;
+        justify-content: left !important;
+        align-items: left !important;
+
+        width: 100%;
+    }
+
+    .mainNavCollapseItems{
+        width: 100%;
+        padding-left: 5% !important;
+    }
+
+    .newJobSign{
+        right: 88%;
+    }
+
+    .notifications{
+        right: 2%;
+        top: 5%;
+    }
+
+    .logoBox{
+        height: 1.3em;
+    width: 1.3em; 
+    border: 1px solid var(--blue);
+    }
+
+    .logoBox h3{
+        font-size: 0.8em;
+    }
+
+    .navbar-brand h5{
+        font-size: 0.2em;
+    }
+
+    .navbar-brand{
+        width: fit-content !important;
+    }
+
+    .logoCircle{
+        width: 1em;
+        height: 1em;
+        bottom: 30%;
+        left: 23%;
+    }
+
+    .logoImgUp{
+        height: 65px;
+        margin: 0;
+        position: absolute;
+        bottom: -500% !important;
+        left: 20%;
+        opacity: 0;
+
+        transition: all 0.3s ease;
+    }
+
+    .heroMainSecBtn{
+        background-color: black !important;
+    }
+
+   
+.logoImg{
+    height: 55px;
+    margin: 0;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    bottom: -530%;
+        left: 25%;
+}
+    
+    @keyframes logoUpEntry {
+        from {
+            opacity: 0;
+            top: -200%;
+        }
+        to{
+            opacity: 1;
+            top: -300%;
+        }
+    }
+    
+    .logoUpEntry{
+        animation: logoUpEntry 0.3s forwards;
+    }
+
+    .mainNavContainer{
+        z-index: 1000 !important;
+        position: relative !important;
+    }
+  }

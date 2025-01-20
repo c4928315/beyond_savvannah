@@ -1,0 +1,274 @@
+.testimonaialCarousel{
+    background-color: white;
+    height: fit-content;
+    width: 100%;
+    margin-top: 80px;
+    position: relative;
+    padding: 10% 3em;
+}
+
+
+.testimonials .carousel-inner{
+    height: 550px;
+}  
+
+.testimonialImage{
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 0px;
+    object-fit: cover;
+}
+
+.tetimonialsHolder{
+    display: flex;
+    justify-content: center;
+}
+
+
+.testimonyContent{
+    display: block;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.profilePicPosition{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.topDecor{
+    margin-bottom: 0px;
+    color:  #b48e41;
+    font-size: 1.8em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+
+.userTestimony{
+    margin-bottom: 30px;
+    color: var(--jungle-green);
+    letter-spacing: 0.03em;
+    font-size: 2em;
+    font-family: 'Trirong', serif;
+    font-weight: 400 !important;
+}
+
+.testimonyPic {
+    border-radius: 30vh;
+    height: 4.5em;
+    object-fit: cover;
+    width: 4.5em;
+    margin-bottom: 1em;
+}
+
+.userName{
+    text-transform: capitalize;
+    font-weight: 100;
+    letter-spacing: 0.04em;
+    color: black;
+    align-items: center;
+    margin: 0;
+    width: fit-content;
+    display: flex;
+    justify-content: left;
+    font-family: sans-serif;
+   font-style: italic;
+   font-size: 1em; 
+}
+.occupation{
+    letter-spacing: 0.04em;
+    color: var(--light-gray);
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+}
+
+.nameAndPosition{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+    color: black;
+}
+
+.btnDiasabled{
+    display: none;
+}
+
+
+.carousel-indicators button{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: var(--jungle-green) !important;
+}
+
+.testimonyActive .active{
+    border-radius: 50% !important;
+    background-color: #b48e41 !important;
+    padding: 0 !important;
+    width: 12px !important;
+    height: 12px !important;
+}
+
+
+.testimonaialCarousel .carousel-indicators{
+    margin-bottom: 3.5em !important;
+    position: absolute;
+    left: -90%;
+}
+
+.testimonyItem{
+    height:fit-content !important; 
+}
+
+.newUserTestimonyFlex{
+    display: flex !important;
+    align-items: center !important;
+    gap: 20px !important;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+}
+
+.testimonyDiv1, .testimonyDiv2{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+
+}
+
+.testimonyDiv1{
+    margin-bottom: 2em;
+}
+
+.testimonyDiv2{
+    margin-top: 2em;
+}
+
+.testimonyDivInner{
+    height: 5em;
+    width: 2px;
+    background-color: #b48e41;
+}
+
+@media screen and (min-width: 320px) and (max-width: 736px) {
+    .subscribeNewsLetter{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .userTestimony{
+        font-size: 0.6em;
+    }
+
+    .testimonyPic {
+        border-radius: 30vh;
+        height: 2.2em;
+        object-fit: cover;
+        width: 2.2em;
+    }
+
+    .topDecor p{
+        font-size: 0.8em;
+        margin: 0;
+        margin-bottom: 0 !important;
+        width: 100%;
+        font-weight: 600;
+    }
+
+    .topDecor{
+        margin-bottom: 0 !important;
+        width: 100%;
+    }
+
+    .testimonyContent{
+        padding: 5%;
+    }
+
+    .testimonaialCarousel{
+        height: 42vh;
+    }
+    
+    .testimonialImage{
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    .userName{
+        font-size: 0.8em;
+    }
+
+    .occupation{
+        font-size: 0.7em;
+    }
+
+    .testimonaialCarousel .carousel-indicators{
+        margin-bottom: 1.2em !important;
+    }
+
+    .testimonyItem{
+        height: fit-content !important;
+    }
+
+    .newsLetterHeader h1{
+        font-size: 1em;
+        font-weight: 600;
+        align-items: center;
+    }
+
+    .newsLetterSubHeader p{
+        font-size: 0.8em;
+        line-height: 1.2em;
+    }
+    
+    .newsLetterInner{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .subscribeNewsLetterBtn button{
+        width: 14em !important;
+        height: 2.3em !important;
+    }
+    
+    .subscribeNewsLetterArea input, .subscribeNewsLetter{
+        height: 2em !important;
+    }
+
+    .testimonyDivInner{
+        height: 2.5em;
+    }
+
+    .testimonyDiv1{
+        margin-bottom: 0;
+    }
+
+    .testimonyDiv2{
+        margin-top: 0;
+    }
+
+    .testimonaialCarousel{
+        margin-top: 1em;
+    }
+
+    .quote{
+        font-size: 0.5em;
+    }
+
+    .testimonaialCarousel .carousel-indicators{
+        left: -70%;
+    }
+  }

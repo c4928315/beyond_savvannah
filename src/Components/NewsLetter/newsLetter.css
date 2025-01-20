@@ -1,0 +1,140 @@
+.newsLetterContainer{
+    background-color: #fff4ee;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 5em;
+}
+
+.newsLetterDesign{
+    position: absolute;
+    height: 80%;
+    width: 90%;
+    border: 7px solid var(--jungle-green);
+}
+
+.newsLetterHeader h1{
+    color: var(--jungle-green);
+    font-family: 'Trirong', serif;
+    font-size: 1.78em;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+}
+
+.newsLetterSubHeader {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 25px;
+    font-size: 15px;
+    margin-top: 0.5em;
+}
+
+.subscribeNewsLetter{
+    width: 100%;
+    background-color: transparent;
+    box-shadow: var(--jungle-green) 0px 4px 8px -2px, var(--jungle-green) 0px 0px 0px 1px;
+    border-radius: 6px;
+    border-bottom-left-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    height: 3.5em;
+    align-items: center;
+}
+
+.subscribeNewsLetterBtn{
+    width: 20%;
+    height: 100%;
+    margin: 0px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribeNewsLetterBtn button{
+    width: 80%;
+    border: none;
+    height: 75%;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: var(--jungle-green);
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.subscribeNewsLetterBtn button:hover{
+    background-color: var(--dark-blue);
+}
+
+.subscribeNewsLetterArea{
+    width: 70%;
+    margin: 0px;
+    border: none;
+    display: flex !important;
+    align-items: center !important;
+    
+}
+
+.subscribeNewsLetterArea input{
+    width: 100%;
+    border: none;
+    height: 40px !important;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    padding-left: 10px !important;
+    color: var(--blue);
+    font-weight: 300;
+    font-style: italic;
+    font-size: 0.9em;
+    background-color: transparent !important;
+}
+
+.subscribeNewsLetterArea input::placeholder{
+    color: var(--jungle-green);
+    font-weight: 300;
+    font-style: italic;
+    font-size: 01.1em;
+}
+
+.subscribeNewsLetterArea input:focus{
+   outline: none;
+   border: none;
+   margin-right: 10px;
+}
+
+.newsLetterSubHeader p{
+    color: black;
+    font-family: sans-serif;
+    letter-spacing: 0.025em;
+    font-weight: 300;
+}
+
+.newsLetterInner{
+    width: 75%;
+    margin: 0 auto;
+    z-index: 4;
+}
+
+@media screen and (min-width: 320px) and (max-width: 736px) {
+    .subscribeNewsLetter{
+        width: 75% !important;
+        margin: 0 auto !important;
+    }
+
+    .newsLetterHeader{
+        width: 80%;
+        width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    }
+}
