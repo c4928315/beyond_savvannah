@@ -53,11 +53,11 @@ function Login({ onLogin }) {
 
       console.log(response)
 
-      setAuth({ user, bearerToken });f
+      setAuth({ user, bearerToken });
 
       localStorage.setItem(
         "auth",
-        JSON.stringify({ email: userName, user, bearerToken, claims })
+        JSON.stringify({ email: userName, user, bearerToken })
       );
 
       onLogin();
