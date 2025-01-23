@@ -249,6 +249,17 @@ label{
         overflow: hidden !important;
     }
 
+    .error{
+        font-size: 13px;
+    }
+
+    .phoneInputPurchase{
+        flex-direction: column;
+        justify-content: left;
+        align-items: normal;
+    }
+
+
     .paymentGateAwayInner1{
         margin-top: 15%;
     }

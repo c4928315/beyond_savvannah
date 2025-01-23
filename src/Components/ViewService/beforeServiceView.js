@@ -226,13 +226,13 @@ function BeforeServiceView() {
                 <div className="fields">
                   <div className="phoneInputPurchase">
                     <label>Phone Number</label>
-                    {/* <p className="error">*{error}</p> */}
-                    <p className="error">
+                    <p className="error">*{error}</p>
+                    {/* <p className="error">
                       <IoInformationCircleOutline size={25} color="red" />
                       <span className="tooltip">
                       Phone number must start with 254, 255, or 256 (e.g., 254701234567).
                       </span>
-                    </p>
+                    </p> */}
                   </div>
                   <input
                     type="text"
