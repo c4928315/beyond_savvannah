@@ -53,6 +53,15 @@ function Nav() {
     setSeeVideo(!seeVideo)
   }
 
+  const [logoState, setLogoState] = useState(true)
+
+  const handleLogoState = () => {
+    // if(logoState)
+    setTimeout(() => setLogoState(!logoState), 300)
+  }
+
+
+
 
   return (
     <div className={`navContainer ${scrolled ? "scrolled" : ""}`} style={{backgroundColor: "white"}}>
@@ -60,8 +69,13 @@ function Nav() {
         <div className="container-fluid mainNavContainer">
           <Link to="/" className="navbar-brand">
           {
+            logoState && (
+             
             scrolled ? <img src="https://i.postimg.cc/gk73Ckr4/Blue-Modern-Global-Network-Company-Logo-8.png" alt="logo" className={`logoImgUp ${scrolled ? "logoUpEntry" : ""}`}/> : <img src="https://i.postimg.cc/0jDHqfz9/Blue-Modern-Global-Network-Company-Logo-5.png" alt="logo" className="logoImg"/>
+      
+            )
           }
+         
             {/* <div className="logoCircle"></div>
             <div className="logoBox">
               <h3>B</h3>
@@ -69,7 +83,7 @@ function Nav() {
             <h5>BEYOND SAVANNAH CONSULTING LIMITED</h5> */}
           </Link>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler navbar-toggler-2"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -77,7 +91,7 @@ function Nav() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon" onClick={handleLogoState}></span>
           </button>
           <div
             className="collapse navbar-collapse mainNavCollapse"

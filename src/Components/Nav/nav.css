@@ -20,6 +20,11 @@
     bottom: -730%;
 }
 
+.navbar-toggler-2:focus{
+    outline: none;
+    box-shadow: none;
+}
+
 
 .logoImgUp{
     height: 85px;

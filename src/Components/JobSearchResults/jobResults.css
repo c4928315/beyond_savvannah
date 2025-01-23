@@ -39,9 +39,10 @@
 .jobResultsTopNav{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     gap: 5px;
     color: var(--blue);
+    width: 50%;
 }
 
 .jobResultsTopNav svg{
@@ -406,12 +407,25 @@
 
     }
 
+    .jobResultsBottomRight .openingCardContainer{
+        width: 100%;
+    }
+
+    .jobCards{
+        display: block !important;
+    }
+
+    .jobResultsTop{
+        margin-bottom: 3rem;
+    }
+
     .jobResultsBottomLeft{
         width: 100%;
         background-color: white;
         padding-top: 0%;
         z-index: 1;
         top: 12%;
+        display: block;
     }
 
     .jobRangeDropdown .dropdown-menu li{
@@ -459,13 +473,40 @@
         border: none !important;
     }
 
+    .jobResultsBottomInputContainer{
+        width: 100%;
+    }
+
     .formInputResultsContainer{
-        border: none;
-        border-radius: 1.3vh !important;
+        border: 1px solid var(--jungle-green);
+        border-radius: 0.6vh !important;
+        border-right: 1px solid var(--jungle-green) !important;
+        border-left: 1px solid var(--jungle-green) !important;
         display: flex !important;
         align-items: center;
         width: 100%;
-        height: 10rem !important;
+        height: 3rem !important;
+        background-color: transparent !important;
+    }
+
+    .jobResultsBottomInputContainerFilter{
+        position: relative !important;
+        width: 100%;
+        height: 3rem !important;
+    }
+
+    .formInputResultsContainerFilter{
+        border: none !important;
+        justify-content: left !important;
+        padding: 0 !important;
+        position: absolute !important;
+        left: -4.5% !important;
+    }
+
+    .formInputResultsContainer input, .formInputResultsContainer select{
+        height: 2.5rem !important;
+        width: 90% !important;
+        margin-right: 10px;
     }
 
     .formInputResultsContainer select {

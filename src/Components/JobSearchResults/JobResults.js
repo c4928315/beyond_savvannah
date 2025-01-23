@@ -179,9 +179,9 @@ function JobResults() {
                 </select>
               </div>
             </div>
-            <div className="jobResultsBottomInputContainer">
+            <div className="jobResultsBottomInputContainer jobResultsBottomInputContainerFilter">
               <div
-                className="formInputResultsContainer"
+                className="formInputResultsContainer formInputResultsContainerFilter"
                 style={{
                   display: "flex",
                   width: "100%",
