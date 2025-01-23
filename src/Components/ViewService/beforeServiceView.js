@@ -179,7 +179,8 @@ function BeforeServiceView() {
     //   </div>
     // </div>
     <div className="paymentGateAway">
-      <h1>Checkout</h1>
+      <div className="paymentGateAwayInner1">
+        <h1>Checkout</h1>
       <div className="norefund">
         <p>
           Please note that once a service is purchased, it is non-refundable.
@@ -293,6 +294,8 @@ function BeforeServiceView() {
           </button>
         </div>
       </div>
+      </div>
+      
     </div>
   );
 }

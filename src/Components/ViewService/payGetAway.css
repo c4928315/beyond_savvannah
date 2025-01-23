@@ -1,7 +1,7 @@
 .paymentGateAway{
     max-height: fit-content;
     min-height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: #f9f9f9;
     color: var(--jungle-green);
     /* display: flex;
@@ -9,10 +9,18 @@
     justify-content: center; */
     top: 0;
     left: 0;
-    padding: 5% 4%;
+    padding: 5% 0%;
     z-index: 100;
     padding-bottom: 5%;
     overflow: scroll;
+}
+
+.paymentGateAwayInner1{
+    width: 94%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .norefund{
@@ -237,23 +245,60 @@ label{
     .paymentGateAwayInner{
         display: block !important;
         height: fit-content !important;
-        width: fit-content !important;
-        overflow: scroll !important;
+        width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    .paymentGateAwayInner1{
+        margin-top: 15%;
+    }
+
+    .norefund p{
+        font-size: 90%;
+    }
+
+    .paymentGateAway h1{
+        width: 100%;
     }
 
     .paymentGateAwayInnerLeft{
-        width: 100%;
+        width: 100% !important;
+        height: fit-content !important;
+    }
+    
+    .details{
+        flex-wrap: wrap;
+    }
+
+    .paymentGateAwayInnerLeftBottomForm{
+        width: 100% !important;
+        display: block !important;
+    }
+
+    .paymentGateAwayInnerLeftBottomForm .fields input{
+        width: 100% !important;
+    }
+
+    .fields{
+        margin-bottom: 20px;
+    }
+
+    .paymentGateAwayInnerLeftTop{
+        width: fit-content !important;
+    }
+
+    .paymentGateAwayInnerLeftBottom{
+        width: 100% !important;
         height: fit-content !important;
     }
    
     .paymentGateAway{
         max-height: fit-content !important;
         min-height: fit-content !important;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+        display: block;
+        
         position: relative;
-        padding: 20px;
+        
     }
 
     .paymentGateAwayInnerRight{
