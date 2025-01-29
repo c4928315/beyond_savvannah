@@ -324,14 +324,100 @@
   right: 5%;
 }
 
+.hereContainerAndroid{
+  display: none;
+}
+
 
 @media screen and (min-width: 320px) and (max-width: 736px) {
+
+  *{
+    font-family: sans-serif;
+  }
+
+  .hereContainerAndroid{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .androidHeroCircle{
+    position: absolute;
+    height: 60rem;
+    width: 60rem;
+    background-color: #e4c3b1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    right: 50%;
+    left: 50%;
+    top: 120%;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    padding-top: 20%;
+  }
+
+  .androidHeroCircleContent h6{
+    color: var(--jungle-green);
+    font-size: 1.3em;
+    font-weight: 600;
+    width: 16rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: capitalize !important;
+    font-family: sans-serif;
+    margin-bottom: 1.5rem;
+  }
+
+  .androidHeroCircleContent button {
+    color: white;
+    background-color: var(--jungle-green);
+    width: 16rem;
+    border-radius: 0.6vh;
+    height: 3rem;
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+
+  .androidHeroCircleContent p{
+    color: var(--jungle-green);
+    font-size: 0.7rem;
+    width: 16rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: capitalize !important;
+    font-family: sans-serif;
+  }
+
+
+
+  .androidHeroImg{
+    height: 80vh;
+    width: 120%;
+    background-color: rgb(231, 231, 231);
+    position: relative;
+   
+  }
+
+  .hero-image{
+    height: 28rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    right: 50%;
+    left: 45%;
+    bottom: -10%;
+  }
+
   .grid-container{
       display: none;
   }
   
   .heroContainer{
     padding: 5% 3%;
+    display: none;
   }
 
   .heroLeft{

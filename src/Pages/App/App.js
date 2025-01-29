@@ -1,6 +1,6 @@
 // App.js
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Footer from "../../Components/Footer/footer";
 import Layout from "../../Components/Layout/layout";

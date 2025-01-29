@@ -143,7 +143,6 @@ function JobResults() {
             </div>
 
             <div className="jobResultsBottomInputContainer">
-              {/* <label>Category</label> */}
               <div
                 className="formInputResultsContainer"
                 style={{
@@ -220,7 +219,7 @@ function JobResults() {
               </span>
             </div>
           </div>
-          <hr className="hrJobs" />
+          <hr className="hrJobs" /> */}
 
           <div className="popularTags">
             <div className="popularTagsContent">
@@ -236,7 +235,7 @@ function JobResults() {
               </span>
             </div>
           </div>
-          <hr className="hrJobs" /> */}
+          {/* <hr className="hrJobs" /> */}
 
           <>
             {isLoading ? (

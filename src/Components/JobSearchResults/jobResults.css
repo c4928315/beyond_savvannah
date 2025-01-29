@@ -71,7 +71,7 @@
     align-items: center;
     width: 100vw;
     height: fit-content;
-    margin-top: 20px;
+    margin-bottom: 0rem;
 }
 
 .popularTags2{
@@ -84,7 +84,7 @@
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
-    color: #b8b8b8;
+    color: var(--jungle-green);
     gap: 0.8rem;
 }
 
@@ -115,14 +115,21 @@
 }
 
 .popularTagsContentTagsFiltered{
-    background-color: #b8b8b8;
+    background-color: #F1F2F4;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    height: 2.3rem;
+    height: 2rem;
     border-radius: 2rem;
     padding: 0 1rem;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+}
+
+.popularTagsContentTagsFiltered:hover{
+    background-color: white;
+    border: 1px solid var(--jungle-green);
 }
 
 .popularTagsContentTagsFilteredIcon{
@@ -130,7 +137,18 @@
     border-radius: 50%;
     cursor: pointer;
     padding: 0.25rem;
+    transition: all 0.3s;
 }
+
+.popularTagsContentTagsFilteredIcon {
+    color: gray; 
+    transition: color 0.3s ease;
+  }
+  
+  .popularTagsContentTagsFiltered:hover .popularTagsContentTagsFilteredIcon {
+    background-color: var(--jungle-green);
+    color: white;
+  }
 
 .jobResultsBottom{
     /* display: flex; */
@@ -145,8 +163,8 @@
 
 .nojobsPhrase{
     position: absolute !important;
-    width: 95.5%;
-    top: 20%;
+    width: 96%;
+    top: 24%;
     left: 0;
     right: 0;
     margin: auto;
@@ -396,6 +414,10 @@
   
 
   @media screen and (min-width: 320px) and (max-width: 736px) {
+    *{
+        font-family: sans-serif;
+    }
+    
     .jobResultsBottom{
         flex-direction: column;
         padding: 50px 19px;
@@ -436,7 +458,7 @@
         width: 100%;
         position: relative;
         height: fit-content;
-        margin-top: 8em;
+        margin-top: 3rem;
     }
 
     .jobDuration button{
@@ -515,6 +537,7 @@
 
     .jobResultsTopNavTitle{
         font-size: 1.2em;
+        margin: 0 ;
     }
 
 
@@ -524,7 +547,8 @@
     }
 
     .jobResultsTopNav p, .jobResultsTopNav a{
-        font-size: 65%;
+        font-size: 100%;
+        margin: 0;
     }
 
     .nojobsPhrase{
@@ -532,6 +556,7 @@
         width: 100%;
         border-radius: 1.5em;
         height: 90vh;
+        top: 28% !important;
     }
 
     #byDefault{
