@@ -5,7 +5,7 @@
     left: 0;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     background-color: red !important;
-    z-index: 500;
+    z-index: 1500;
 }
 
 /* .bg-body-tertiary{

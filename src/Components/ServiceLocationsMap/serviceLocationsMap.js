@@ -42,6 +42,12 @@ const ServiceLocationsMap = () => {
   return (
     <div className="mapGradient">
       <h1 className='mapMainHeader'>We are Global!</h1>
+      <div className="topH1 topH1ServedAndroid">
+          <div className="topH1Innder">
+            <p>We are Global</p>
+            <h1>Serving Across Regions</h1>
+          </div>
+        </div>
       <MapContainer center={[0, 20]} zoom={2} minZoom={2} className="mapContainer">
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

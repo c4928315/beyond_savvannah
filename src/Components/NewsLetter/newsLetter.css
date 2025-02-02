@@ -144,6 +144,7 @@
         padding: 2rem;
         padding-top: 2rem;
         border-radius: 0.6vh;
+        width: 94% !important;
     }
 
     .newsLetterHeader{
@@ -155,6 +156,9 @@
         height: 40vh;
         padding: 0 !important;
         align-items: center;
+        width: 100%;
+        display: block;
+        margin-bottom: 6rem;
     }
 
     .newsLetterSubHeader{

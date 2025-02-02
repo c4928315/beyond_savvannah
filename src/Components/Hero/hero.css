@@ -361,8 +361,8 @@
 
   .androidHeroCircleContent h6{
     color: var(--jungle-green);
-    font-size: 1.3em;
-    font-weight: 600;
+    font-size: 1.2em;
+    font-weight: 500;
     width: 16rem;
     display: flex;
     flex-wrap: wrap;
@@ -384,7 +384,7 @@
 
   .androidHeroCircleContent p{
     color: var(--jungle-green);
-    font-size: 0.7rem;
+    font-size: 0.58rem;
     width: 16rem;
     display: flex;
     flex-wrap: wrap;

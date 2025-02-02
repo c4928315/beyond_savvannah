@@ -4,6 +4,12 @@ import "./newsLetter.css";
 function NewsLetter() {
   return (
     <div className="newsLetterContainer">
+      <div className="topH1 topH1ServedAndroid marginTop2rem">
+          <div className="topH1Innder ">
+            <p>Newsletter</p>
+            <h1>Stay in the Loop</h1>
+          </div>
+        </div>
       <div className="newsLetterInner">
         <div>
           <div className="newsLetterHeader">

@@ -134,6 +134,12 @@ section {
   background-image: url('https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=800');
 }
 
+
+
+.custom-slider {
+  gap: 20px; /* Adjust spacing between items */
+}
+
 .cover.item-b {
   background-image: url('https://images.pexels.com/photos/19579976/pexels-photo-19579976/free-photo-of-smiling-student-in-graduate-gown-shows-her-blue-mortarboard-with-a-tassel.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load');
 }
@@ -219,7 +225,84 @@ section {
   color: var(--jungle-green);
 }
 
+.servicesAndroid{
+  display: none;
+  position: relative;
+  z-index: 60;
+}
+
 @media screen and (min-width: 320px) and (max-width: 736px) {
+
+  .one {
+    height: 27rem;
+    width: 97%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0.6vh;
+    position: relative;
+  }
+
+  .one::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.16); 
+    z-index: 1;
+    border-radius: 0.6vh;
+  }
+
+  .androidH1Container{
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .androidH1Container h1{
+    color: white;
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .androidH1ContainerIcon{
+    color: white;
+  }
+
+  .androidOne {
+    background-image: url('https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=800');
+  }
+  
+  .androidTwo {
+    background-image: url('https://images.pexels.com/photos/19579976/pexels-photo-19579976/free-photo-of-smiling-student-in-graduate-gown-shows-her-blue-mortarboard-with-a-tassel.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load');
+  }
+  
+  .androidThree {
+    background-image: url('https://images.pexels.com/photos/16450745/pexels-photo-16450745/free-photo-of-linkedin-page-on-cellphone-screen.jpeg?auto=compress&cs=tinysrgb&w=800');
+  }
+  .androidFour {
+    background-image: url('https://images.pexels.com/photos/3727511/pexels-photo-3727511.jpeg?auto=compress&cs=tinysrgb&w=800');
+  }
+  .androidFive {
+    background-image: url('https://images.pexels.com/photos/5699475/pexels-photo-5699475.jpeg?auto=compress&cs=tinysrgb&w=800');
+  }
+  .androidSix {
+    background-image: url('https://images.pexels.com/photos/4491918/pexels-photo-4491918.jpeg?auto=compress&cs=tinysrgb&w=800');
+  }
+  .androidSeven {
+    background-image: url('https://images.pexels.com/photos/7491564/pexels-photo-7491564.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load');
+  }
+  .androidEight {
+    background-image: url('https://images.pexels.com/photos/4261800/pexels-photo-4261800.jpeg?auto=compress&cs=tinysrgb&w=800');
+  }
 
   .card{
     height: 15em;
@@ -245,6 +328,8 @@ section {
 
   .topH1{
     justify-content: left;
+    position: relative !important;
+    z-index: 10 !important;
   }
 
   .topH1Innder{
@@ -269,7 +354,6 @@ section {
     z-index: 100;
     position: relative;
     background-color: white;
-    margin-top: 1.5rem;
     margin-bottom: 2rem;
   }
 
@@ -277,6 +361,172 @@ section {
     width: 88%;
     margin-top: 0em !important;
     margin: 0 auto !important;
+  }
+
+  .webSection{
+    display: none;
+  }
+
+  .servicesAndroid{
+    display: block;
+    padding-left: 0.8rem;
+  }
+
+  .carousel-button-group{
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    display: flex;
+    gap: 2rem;
+    padding-right: 1rem;
+  }
+
+  .carousel-button-group button{
+    background-color: var(--jungle-green);
+    color: white;
+    z-index: 60 !important;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.6vh;
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .react-multiple-carousel__arrow{
+    display: none !important;
+  }
+
+  .disable{
+    background-color: rgba(83, 130, 138, 0.7) !important;
+  }
+
+  .serviceBlurAndroid{
+    position: absolute;
+    top: 0;
+    bottom: -400%;
+    left: 0;
+    right: 0;
+    /* From https://css.glass */
+background: rgba(28, 54, 58, 0.34);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.5px);
+-webkit-backdrop-filter: blur(3.5px);
+    z-index: 1900;
+  }
+
+  .serviceBlurAndroidCard{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .serviceCard{
+    height: 80%;
+    width: 85%;
+    background-color: white;
+    position: absolute;
+    top: 53%;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .serviceCardInner{
+    border: 1px solid rgba(28, 54, 58, 0.2);
+    height: 96%;
+    width: 95%;
+    margin: auto;
+    border-radius: 0.6vh;
+    padding: 0.4rem 1rem;
+    position: relative;
+  }
+
+  .timeCostServiceCard{
+    position: absolute;
+    top: 7%;
+    right: 7%;
+  }
+
+  .serviceCardInnerLogo{
+    width: 5.5rem;
+  }
+
+  .serviceCardInnerContent h1{
+    color: var(--jungle-green);
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .serviceCardInnerContentPtag{
+    font-size: 14px;
+    color: var(--jungle-green);
+  }
+
+  .topH1InnderServiceCard{
+    width: 100% !important;
+  }
+
+  .topH1ServiceCard{
+    margin: 2rem 0;
+    margin-top: 1rem;
+  }
+
+  .serviceCardButtonsPurchase{
+    background-color: var(--jungle-green);
+    color: white;
+    padding: 0.3rem 1.4rem;
+    border-radius: 0.6vh;
+    border: 1px solid transparent;
+    outline: none;
+    box-shadow: none;
+    transition: all 0.3s;
+  }
+
+  .serviceCardButtonsPurchase:hover{
+    background-color: whitesmoke;
+    color: var(--jungle-green);
+    border: 1px solid var(--jungle-green);
+  }
+
+  .serviceCardButtons{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 15px;
+  }
+
+  .timeCostServiceCard span{
+    display: flex;
+    gap: 0.5rem;
+    font-size: 12px;
+    color: var(--jungle-green);
+  }
+
+  .timeCostServiceCard span p{
+    margin: 0;
+  }
+
+  .closeServiceCard{
+    background-color: var(--jungle-green);
+    border-radius: 50%;
+    padding: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -2%;
+    right: -2.7%;
   }
 }
 

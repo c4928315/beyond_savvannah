@@ -1,274 +1,367 @@
-.testimonaialCarousel{
-    background-color: white;
-    height: fit-content;
-    width: 100%;
-    margin-top: 80px;
-    position: relative;
-    padding: 10% 3em;
+.testimonaialCarousel {
+  background-color: white;
+  height: fit-content;
+  width: 100%;
+  margin-top: 80px;
+  position: relative;
+  padding: 10% 3em;
 }
 
-
-.testimonials .carousel-inner{
-    height: 550px;
-}  
-
-.testimonialImage{
-    width: 3em;
-    height: 3em;
-    border-radius: 50%;
-    background-position: center;
-    background-size: cover;
-    margin-bottom: 0px;
-    object-fit: cover;
+.testimonials .carousel-inner {
+  height: 550px;
 }
 
-.tetimonialsHolder{
-    display: flex;
-    justify-content: center;
+.testimonialImage {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 0px;
+  object-fit: cover;
 }
 
-
-.testimonyContent{
-    display: block;
-    text-align: center;
-    color: white;
-    width: 100%;
+.tetimonialsHolder {
+  display: flex;
+  justify-content: center;
 }
 
-.profilePicPosition{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.testimonyContent {
+  display: block;
+  text-align: center;
+  color: white;
+  width: 100%;
 }
 
-.topDecor{
-    margin-bottom: 0px;
-    color:  #b48e41;
-    font-size: 1.8em;
-    font-weight: 500;
-    text-transform: uppercase;
+.profilePicPosition {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
+.topDecor {
+  margin-bottom: 0px;
+  color: #b48e41;
+  font-size: 1.8em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
 
-
-.userTestimony{
-    margin-bottom: 30px;
-    color: var(--jungle-green);
-    letter-spacing: 0.03em;
-    font-size: 2em;
-    font-family: 'Trirong', serif;
-    font-weight: 400 !important;
+.userTestimony {
+  margin-bottom: 30px;
+  color: var(--jungle-green);
+  letter-spacing: 0.03em;
+  font-size: 2em;
+  font-family: "Trirong", serif;
+  font-weight: 400 !important;
 }
 
 .testimonyPic {
-    border-radius: 30vh;
-    height: 4.5em;
-    object-fit: cover;
-    width: 4.5em;
-    margin-bottom: 1em;
+  border-radius: 30vh;
+  height: 4.5em;
+  object-fit: cover;
+  width: 4.5em;
+  margin-bottom: 1em;
 }
 
-.userName{
-    text-transform: capitalize;
-    font-weight: 100;
-    letter-spacing: 0.04em;
-    color: black;
-    align-items: center;
-    margin: 0;
-    width: fit-content;
-    display: flex;
-    justify-content: left;
-    font-family: sans-serif;
-   font-style: italic;
-   font-size: 1em; 
+.userName {
+  text-transform: capitalize;
+  font-weight: 100;
+  letter-spacing: 0.04em;
+  color: black;
+  align-items: center;
+  margin: 0;
+  width: fit-content;
+  display: flex;
+  justify-content: left;
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: 1em;
 }
-.occupation{
-    letter-spacing: 0.04em;
-    color: var(--light-gray);
-    font-weight: 400;
-    font-size: 14px;
-    margin: 0;
-}
-
-.nameAndPosition{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    gap: 0.8em;
-    color: black;
+.occupation {
+  letter-spacing: 0.04em;
+  color: var(--light-gray);
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
 }
 
-.btnDiasabled{
-    display: none;
+.nameAndPosition {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  color: black;
 }
 
+.btnDiasabled {
+  display: none;
+}
 
-.carousel-indicators button{
-    width: 10px !important;
-    height: 10px !important;
-    border-radius: 50% !important;
+.carousel-indicators button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
 }
 
 .carousel-indicators [data-bs-target] {
-    background-color: var(--jungle-green) !important;
+  background-color: var(--jungle-green) !important;
 }
 
-.testimonyActive .active{
-    border-radius: 50% !important;
-    background-color: #b48e41 !important;
-    padding: 0 !important;
-    width: 12px !important;
-    height: 12px !important;
+.testimonyActive .active {
+  border-radius: 50% !important;
+  background-color: #b48e41 !important;
+  padding: 0 !important;
+  width: 12px !important;
+  height: 12px !important;
 }
 
-
-.testimonaialCarousel .carousel-indicators{
-    margin-bottom: 3.5em !important;
-    position: absolute;
-    left: -90%;
+.testimonaialCarousel .carousel-indicators {
+  margin-bottom: 3.5em !important;
+  position: absolute;
+  left: -90%;
 }
 
-.testimonyItem{
-    height:fit-content !important; 
+.testimonyItem {
+  height: fit-content !important;
 }
 
-.newUserTestimonyFlex{
-    display: flex !important;
-    align-items: center !important;
-    gap: 20px !important;
-    width: 100%;
-    height: fit-content;
-    justify-content: center;
+.newUserTestimonyFlex {
+  display: flex !important;
+  align-items: center !important;
+  gap: 20px !important;
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
 }
 
-.testimonyDiv1, .testimonyDiv2{
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-
+.testimonyDiv1,
+.testimonyDiv2 {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
 }
 
-.testimonyDiv1{
-    margin-bottom: 2em;
+.testimonyDiv1 {
+  margin-bottom: 2em;
 }
 
-.testimonyDiv2{
-    margin-top: 2em;
+.testimonyDiv2 {
+  margin-top: 2em;
 }
 
-.testimonyDivInner{
-    height: 5em;
-    width: 2px;
-    background-color: #b48e41;
+.testimonyDivInner {
+  height: 5em;
+  width: 2px;
+  background-color: #b48e41;
 }
 
 @media screen and (min-width: 320px) and (max-width: 736px) {
-    .subscribeNewsLetter{
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .userTestimony{
-        font-size: 0.6em;
-    }
-
-    .testimonyPic {
-        border-radius: 30vh;
-        height: 2.2em;
-        object-fit: cover;
-        width: 2.2em;
-    }
-
-    .topDecor p{
-        font-size: 0.8em;
-        margin: 0;
-        margin-bottom: 0 !important;
-        width: 100%;
-        font-weight: 600;
-    }
-
-    .topDecor{
-        margin-bottom: 0 !important;
-        width: 100%;
-    }
-
-    .testimonyContent{
-        padding: 5%;
-    }
-
-    .testimonaialCarousel{
-        height: 42vh;
-    }
-    
-    .testimonialImage{
-        width: 1.5em;
-        height: 1.5em;
-    }
-
-    .userName{
-        font-size: 0.8em;
-    }
-
-    .occupation{
-        font-size: 0.7em;
-    }
-
-    .testimonaialCarousel .carousel-indicators{
-        margin-bottom: 1.2em !important;
-    }
-
-    .testimonyItem{
-        height: fit-content !important;
-    }
-
-    .newsLetterHeader h1{
-        font-size: 1em;
-        font-weight: 600;
-        align-items: center;
-    }
-
-    .newsLetterSubHeader p{
-        font-size: 0.8em;
-        line-height: 1.2em;
-    }
-    
-    .newsLetterInner{
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .subscribeNewsLetterBtn button{
-        width: 14em !important;
-        height: 2.3em !important;
-    }
-    
-    .subscribeNewsLetterArea input, .subscribeNewsLetter{
-        height: 2em !important;
-    }
-
-    .testimonyDivInner{
-        height: 2.5em;
-    }
-
-    .testimonyDiv1{
-        margin-bottom: 0;
-    }
-
-    .testimonyDiv2{
-        margin-top: 0;
-    }
-
-    .testimonaialCarousel{
-        margin-top: 1em;
-    }
-
-    .quote{
-        font-size: 0.5em;
-    }
-
-    .testimonaialCarousel .carousel-indicators{
-        left: -70%;
-    }
+  .subscribeNewsLetter {
+    width: 90%;
+    margin: 0 auto;
   }
+
+  .userTestimony {
+    font-size: 0.6em;
+  }
+
+  .testimonyPic {
+    border-radius: 30vh;
+    height: 2.2em;
+    object-fit: cover;
+    width: 2.2em;
+  }
+
+  .topDecor p {
+    font-size: 0.8em;
+    margin: 0;
+    margin-bottom: 0 !important;
+    width: 100%;
+    font-weight: 600;
+  }
+
+  .topDecor {
+    margin-bottom: 0 !important;
+    width: 100%;
+  }
+
+  .testimonyContent {
+    padding: 5%;
+  }
+
+  .testimonaialCarousel {
+    height: 42vh;
+  }
+
+  .testimonialImage {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .userName {
+    font-size: 0.8em;
+  }
+
+  .occupation {
+    font-size: 0.7em;
+  }
+
+  .testimonaialCarousel .carousel-indicators {
+    margin-bottom: 1.2em !important;
+  }
+
+  .testimonyItem {
+    height: fit-content !important;
+  }
+
+  .newsLetterHeader h1 {
+    font-size: 1em;
+    font-weight: 600;
+    align-items: center;
+  }
+
+  .newsLetterSubHeader p {
+    font-size: 0.8em;
+    line-height: 1.2em;
+  }
+
+  .newsLetterInner {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .subscribeNewsLetterBtn button {
+    width: 14em !important;
+    height: 2.3em !important;
+  }
+
+  .subscribeNewsLetterArea input,
+  .subscribeNewsLetter {
+    height: 2em !important;
+  }
+
+  .testimonyDivInner {
+    height: 2.5em;
+  }
+
+  .testimonyDiv1 {
+    margin-bottom: 0;
+  }
+
+  .testimonyDiv2 {
+    margin-top: 0;
+  }
+
+  .testimonaialCarousel {
+    margin-top: 1em;
+    display: none;
+  }
+
+  .quote {
+    font-size: 0.5em;
+  }
+
+  .testimonaialCarousel .carousel-indicators {
+    left: -70%;
+  }
+
+  .quarter-circle {
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 7rem;
+    height: 7rem;
+    margin: auto;
+    border-radius: 0% 0% 0% 100%;
+    position: absolute;
+    right: 4%;
+    top: 4%;
+  }
+
+  .quarter-circle-one{
+    background-image: url("https://i.postimg.cc/L8MC579B/Whats-App-Image-2024-08-14-at-10-35-40.jpg");
+  }
+  .quarter-circle-two{
+    background-image: url("https://i.postimg.cc/nrDXyXBZ/Whats-App-Image-2024-08-13-at-15-51-39.jpg");
+  }
+  .quarter-circle-three{
+    background-image: url("https://i.postimg.cc/7LZNTrp7/Whats-App-Image-2024-08-15-at-15-28-56.jpg");
+  }
+  .quarter-circle-four{
+    background-image: url("https://i.postimg.cc/LsJ1p9cy/Whats-App-Image-2024-08-16-at-12-47-55.jpg");
+  }
+  .quarter-circle-five{
+    background-image: url("https://i.postimg.cc/3rVb5Nzq/Whats-App-Image-2024-08-14-at-09-24-12.jpg");
+  }
+
+  .marginTop2rem{
+    margin-top: 2rem;
+  }
+
+  .topH1InnderTestimonials{
+    width: 100% !important;
+  }
+
+  .testimonialOne {
+    border: 1px solid rgba(28, 54, 58, 0.2);
+    background-color: white !important;
+    height: 27rem;
+    width: 97%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0.6vh;
+    position: relative;
+  }
+
+  .carousel-button-group-testimonials {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 2rem;
+    padding-right: 1rem;
+    }
+
+    .carousel-button-group-testimonials button {
+        background-color: var(--jungle-green);
+        color: white;
+        z-index: 60 !important;
+        padding: 0.2rem 0.5rem;
+        border-radius: 0.6vh;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        }
+
+        .quotesContainer{
+          transform: rotate(-180deg);
+          position: absolute;
+          top: 35%;
+          left: 6%;
+        }
+
+        .quotesContent{
+          position: absolute;
+          top: 52%;
+          left: 6%;
+          color: var(--jungle-green);
+          font-size: 14px;
+          font-weight: 400;
+        }
+
+        .quotesContent p{
+          width: 97%;
+        }
+
+        .userNameAndroid{
+          color: var(--jungle-green);
+        }
+
+        .marginBottom2rem{
+          margin-bottom: 2rem;
+        }
+}

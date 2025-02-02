@@ -89,6 +89,7 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 736px) {
+    
     .innerFooterItems{
         flex-direction: column;
     }
@@ -127,5 +128,12 @@
         border-radius: 0.4em;
         overflow: hidden;
         align-items: center;
+    }
+
+    .footerHeader{
+        color: #e4c3b1;
+        font-family: sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
     }
   }
