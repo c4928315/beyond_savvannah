@@ -326,6 +326,7 @@
 
 .hereContainerAndroid{
   display: none;
+  width: 100% !important;
 }
 
 
@@ -341,29 +342,36 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    background-color: white !important;
   }
 
   .androidHeroCircle{
-    position: absolute;
-    height: 60rem;
-    width: 60rem;
+    /* position: absolute; */
+    position: relative;
+    height: 47%;
+    width: 100%;
     background-color: #e4c3b1;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    right: 50%;
+    border-radius: 45% 45% 0% 0% ;
+    /* transform: translate(-50%, -50%); */
+    /* right: 50%;
     left: 50%;
-    top: 120%;
-    z-index: 50;
+    top: 120%; */
+    z-index: 100 !important;
     display: flex;
     justify-content: center;
     padding-top: 20%;
+  }
+
+  .androidHeroCircleContent{
+    position: absolute;
+    bottom: 15%;
   }
 
   .androidHeroCircleContent h6{
     color: var(--jungle-green);
     font-size: 1.2em;
     font-weight: 500;
-    width: 16rem;
+    width: 17rem;
     display: flex;
     flex-wrap: wrap;
     text-transform: capitalize !important;
@@ -374,7 +382,7 @@
   .androidHeroCircleContent button {
     color: white;
     background-color: var(--jungle-green);
-    width: 16rem;
+    width: 17rem;
     border-radius: 0.6vh;
     height: 3rem;
     outline: none;
@@ -385,7 +393,7 @@
   .androidHeroCircleContent p{
     color: var(--jungle-green);
     font-size: 0.58rem;
-    width: 16rem;
+    width: 17rem;
     display: flex;
     flex-wrap: wrap;
     text-transform: capitalize !important;
@@ -395,20 +403,21 @@
 
 
   .androidHeroImg{
-    height: 80vh;
+    height: 53%;
     width: 120%;
-    background-color: rgb(231, 231, 231);
+    background-color: white;
     position: relative;
-   
+    z-index: 0;
   }
 
   .hero-image{
-    height: 28rem;
+    height: 100%;
     position: absolute;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 2%);
     right: 50%;
     left: 45%;
-    bottom: -10%;
+    bottom: 0%;
+    z-index: -10;
   }
 
   .grid-container{

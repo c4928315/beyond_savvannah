@@ -285,15 +285,25 @@
     transition: background-color 0.3s, box-shadow 0.3s;
   }
 
-  .displayNone{
+  .displayNone, .navBarAndroidContainer{
       display: none;
   }
+
+
   
 
   @media screen and (min-width: 320px) and (max-width: 736px) {
     .mainNavContainer .show{
         display: flex !important;
         justify-content: left !important;
+    }
+
+    .navBarAndroidContainer{
+        display: block;
+    }
+
+    .navContainer{
+        display: none;
     }
     
     .mainNavCollapseItems .mainNavItem a{

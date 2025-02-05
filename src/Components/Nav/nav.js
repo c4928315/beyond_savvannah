@@ -4,6 +4,7 @@ import LocalContext from "../../Context/contextProvider";
 import customIcons from "../../Icons/customIcons";
 import VideoPlayer from "../Video/video";
 import "./nav.css";
+import NavBarAndroid from "./navBarAndroid";
 
 function Nav() {
   const { jobCategoryId, setJobCategoryId, companies } = useContext(LocalContext);
@@ -64,6 +65,7 @@ function Nav() {
 
 
   return (
+    <>
     <div className={`navContainer ${scrolled ? "scrolled" : ""}`} style={{backgroundColor: "white"}}>
       <nav className={`navbar navbar-expand-lg bg-body-tertiary ${scrolled ? "scrolled-nav" : ""}`} style={{backgroundColor: "white"}}>
         <div className="container-fluid mainNavContainer">
@@ -197,6 +199,11 @@ function Nav() {
         </div> 
       }
     </div>
+    <div className="navBarAndroidContainer">
+      <NavBarAndroid/>
+    </div>
+    </>
+    
   );
 }
 

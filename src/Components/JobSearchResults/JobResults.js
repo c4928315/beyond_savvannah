@@ -204,7 +204,7 @@ function JobResults() {
                   <BsSortUp size={25} color="rgb(28, 54, 58)" />
                   <span style={{ color: "rgb(28, 54, 58)" }}>Filter</span>
                 </button>
-                <button onClick={(e) => handleSearch(e)}>Find Job</button>
+                <button onClick={(e) => handleSearch(e)} className="findJobAndroid">Find Job</button>
               </div>
             </div>
           </div>

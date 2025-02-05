@@ -8,6 +8,8 @@ import { RxCross2 } from "react-icons/rx";
 import { BsFillInfoCircleFill } from "react-icons/bs";
 
 import "./findJobs.css";
+import { serviceData } from "../../db";
+import GetAwayForm from "../GetawayForm/getAwayForm";
 
 function FindJobs({ data }) {
   const [searchTerm, setSearchTerm] = useState("");
@@ -78,6 +80,18 @@ function FindJobs({ data }) {
   };
 
   const [serviceAndroidState, setServiceAndroidState] = useState(false);
+  const [serviceAndroidPaymentState, setServiceAndroidPaymentState] = useState(false);
+
+  const androidService = JSON.parse(localStorage.getItem("androidService"));
+
+  console.log(androidService);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', 
+    });
+  };
 
   return (
     <>
@@ -222,88 +236,31 @@ function FindJobs({ data }) {
               responsive={responsive}
               customButtonGroup={<ButtonGroup />}
             >
-              <div className="one androidOne">
-                <div className="androidH1Container">
-                  <BsFillInfoCircleFill
-                    size={23}
-                    className="androidH1ContainerIcon"
-                    onClick={() => setServiceAndroidState(true)}
-                  />
-                  <h1>CV Revamp</h1>
-                </div>
-              </div>
-              <div className="one androidTwo">
-                <div className="androidH1Container">
-                  <BsFillInfoCircleFill
-                    size={23}
-                    className="androidH1ContainerIcon"
-                    onClick={() => setServiceAndroidState(true)}
-                  />
-                  <h1>Student's Package CV Revamp</h1>
-                </div>
-              </div>
-              <div className="one androidThree">
-                <div className="androidH1Container">
-                  <BsFillInfoCircleFill
-                    size={23}
-                    className="androidH1ContainerIcon"
-                    onClick={() => setServiceAndroidState(true)}
-                  />
-                  <h1>Linkedin Optimisation</h1>
-                </div>
-              </div>
-              <div className="one androidFour">
-                <div className="androidH1Container">
-                  <BsFillInfoCircleFill
-                    size={23}
-                    className="androidH1ContainerIcon"
-                    onClick={() => setServiceAndroidState(true)}
-                  />
-                  <h1>Coaching Session</h1>
-                </div>
-              </div>
-              <div className="one androidFive">
-                <div className="androidH1Container">
-                  <BsFillInfoCircleFill
-                    size={23}
-                    className="androidH1ContainerIcon"
-                    onClick={() => setServiceAndroidState(true)}
-                  />
-                  <h1>Interview Prep</h1>
-                </div>
-              </div>
-              <div className="one androidSix">
-                <div className="androidH1Container">
-                  <BsFillInfoCircleFill
-                    size={23}
-                    className="androidH1ContainerIcon"
-                    onClick={() => setServiceAndroidState(true)}
-                  />
-                  <h1>
-                    Consultation call / <i>Pick my Brain</i>
-                  </h1>
-                </div>
-              </div>
-              <div className="one androidSeven">
-                <div className="androidH1Container">
-                  <BsFillInfoCircleFill
-                    size={23}
-                    className="androidH1ContainerIcon"
-                    onClick={() => setServiceAndroidState(true)}
-                  />
-                  <h1>REMOTE WORK MASTER CLASS</h1>
-                </div>
-              </div>
-              <div className="one androidEight">
-                <div className="androidH1Container">
-                  <BsFillInfoCircleFill
-                    size={23}
-                    className="androidH1ContainerIcon"
-                    onClick={() => setServiceAndroidState(true)}
-                  />
-                  <h1>Introductory video</h1>
-                </div>
-              </div>
+              {serviceData?.map((data, i) => {
+                return (
+                  <div
+                    className="one"
+                    key={i}
+                    style={{ backgroundImage: `url(${data?.url})` }}
+                  >
+                    <div className="androidH1Container">
+                      <BsFillInfoCircleFill
+                        size={23}
+                        className="androidH1ContainerIcon"
+                        onClick={() => {
+                          scrollToTop();
+                          setServiceAndroidState(true);
+                          localStorage.setItem(
+                            "androidService",
+                            JSON.stringify(data)
+                          );
+                        }}
+                      />
+                      <h1>{data?.title}</h1>
+                    </div>
+                  </div>
+                );
+              })}
             </Carousel>
           </div>
         </div>
@@ -312,72 +269,66 @@ function FindJobs({ data }) {
       {serviceAndroidState && (
         <div className="serviceBlurAndroid">
           <div className="serviceBlurAndroidCard">
-            <div className="serviceCard">
-              <div className="serviceCardInner">
-                <div
-                  className="closeServiceCard"
-                  onClick={() => setServiceAndroidState(false)}
-                >
-                  <RxCross2 size={20} color="white" />
-                </div>
-                <div className="timeCostServiceCard">
-                  <span>
-                    <p>Duration:</p> <b>2 hours</b>
-                  </span>
-                  <span>
-                    <p>Cost:</p> <b>ksh. 3000</b>
-                  </span>
-                </div>
-                <img
-                  src="https://i.postimg.cc/0jDHqfz9/Blue-Modern-Global-Network-Company-Logo-5.png"
-                  alt="logo"
-                  className="serviceCardInnerLogo"
-                />
-                <div className="serviceCardInnerContent">
-                  <div className="topH1 topH1AboutAndroid topH1ServiceCard">
-                    <div className="topH1Innder topH1InnderServiceCard">
-                      <p>Service</p>
-                      <h1>CV Revamp</h1>
+            {serviceAndroidPaymentState ? (
+              <GetAwayForm setServiceAndroidState={setServiceAndroidState} setServiceAndroidPaymentState={setServiceAndroidPaymentState}/>
+            ) : (
+              <div className="serviceCard">
+                <div className="serviceCardInner">
+                  <div
+                    className="closeServiceCard"
+                    onClick={() => setServiceAndroidState(false)}
+                  >
+                    <RxCross2 size={20} color="white" />
+                  </div>
+                  <div className="timeCostServiceCard">
+                    <span>
+                      <p>Duration:</p> <b>{androidService?.duration}</b>
+                    </span>
+                    <span>
+                      <p>Cost:</p> <b>{androidService?.cost}</b>
+                    </span>
+                  </div>
+                  <img
+                    src="https://i.postimg.cc/0jDHqfz9/Blue-Modern-Global-Network-Company-Logo-5.png"
+                    alt="logo"
+                    className="serviceCardInnerLogo"
+                  />
+                  <div className="serviceCardInnerContent">
+                    <div className="topH1 topH1AboutAndroid topH1ServiceCard">
+                      <div className="topH1Innder topH1InnderServiceCard">
+                        <p>Service</p>
+                        <h1>{androidService?.title}</h1>
+                      </div>
                     </div>
-                  </div>
 
-                  <div className="viewSBottomPs">
-                    <span className="viewSBottomSpans">
-                      <span>🎯</span>
-                      <p className="serviceCardInnerContentPtag">
-                        Unlock the full potential of your job search with our
-                        tailored CV review and cover letter services. This
-                        package is designed to empower you in your career
-                        journey by ensuring your application materials stand out
-                        to potential employers.
-                      </p>
-                    </span>
-                    <span className="viewSBottomSpans">
-                      <span>🎯</span>
-                      <p className="serviceCardInnerContentPtag">
-                        Cover Letter: Craft a compelling cover letter that
-                        highlights your strengths and showcases your motivation.
-                        We'll help you create a personalized cover letter that
-                        makes a strong impression.
-                      </p>
-                    </span>
-                    <span className="viewSBottomSpans">
-                      <span>🎯</span>
-                      <p className="serviceCardInnerContentPtag">
-                        Bonus: As a special bonus, we're offering insights into
-                        three job openings currently available, giving you a
-                        head start in your job search.
-                      </p>
-                    </span>
-                  </div>
+                    <div className="viewSBottomPs viewSBottomPsAndroid">
+                      {androidService?.benefits?.map((item, index) => {
+                        return (
+                          <span className="viewSBottomSpans" key={index}>
+                            <span>🎯</span>
+                            <p className="serviceCardInnerContentPtag">
+                              {item}
+                            </p>
+                          </span>
+                        );
+                      })}
+                    </div>
 
-                  <div className="serviceCardButtons">
-                    <button className="serviceCardButtonsPurchase">Buy</button>
-                    {/* <button></button> */}
+                    <div className="serviceCardButtons">
+                      <button
+                        className="serviceCardButtonsPurchase"
+                        onClick={() => {
+                          setServiceAndroidPaymentState(true);
+                        }}
+                      >
+                        Buy
+                      </button>
+                      {/* <button></button> */}
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       )}

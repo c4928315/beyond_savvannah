@@ -3,24 +3,24 @@
   padding-top: 5em;
 }
 
-.findJobsInner{
+.findJobsInner {
   width: 100%;
 }
 
-.topH1{
+.topH1 {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.topH1Innder h1{
-  font-family: 'Trirong', serif;
+.topH1Innder h1 {
+  font-family: "Trirong", serif;
   font-size: 2.1em;
   font-weight: 500;
 }
 
-.topH1Innder p{
+.topH1Innder p {
   text-transform: uppercase;
   font-family: sans-serif;
   font-weight: 300;
@@ -37,7 +37,7 @@
 
 /* Rest of the CSS code */
 body {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   background-color: white;
 }
 
@@ -52,7 +52,6 @@ section {
   width: 95vw;
   justify-content: center;
 }
-
 
 .card {
   position: relative;
@@ -99,11 +98,10 @@ section {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-
 }
 
 .cover:before {
-  content: '';
+  content: "";
   position: absolute;
   border-radius: 12px;
   border: 3px solid #b48e41;
@@ -119,7 +117,7 @@ section {
 }
 
 .cover:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0px;
   left: 0px;
@@ -131,36 +129,34 @@ section {
 }
 
 .cover.item-a {
-  background-image: url('https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=800');
+  background-image: url("https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=800");
 }
-
-
 
 .custom-slider {
   gap: 20px; /* Adjust spacing between items */
 }
 
 .cover.item-b {
-  background-image: url('https://images.pexels.com/photos/19579976/pexels-photo-19579976/free-photo-of-smiling-student-in-graduate-gown-shows-her-blue-mortarboard-with-a-tassel.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load');
+  background-image: url("https://images.pexels.com/photos/19579976/pexels-photo-19579976/free-photo-of-smiling-student-in-graduate-gown-shows-her-blue-mortarboard-with-a-tassel.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load");
 }
 
 .cover.item-c {
-  background-image: url('https://images.pexels.com/photos/16450745/pexels-photo-16450745/free-photo-of-linkedin-page-on-cellphone-screen.jpeg?auto=compress&cs=tinysrgb&w=800');
+  background-image: url("https://images.pexels.com/photos/16450745/pexels-photo-16450745/free-photo-of-linkedin-page-on-cellphone-screen.jpeg?auto=compress&cs=tinysrgb&w=800");
 }
 .cover.item-d {
-  background-image: url('https://images.pexels.com/photos/3727511/pexels-photo-3727511.jpeg?auto=compress&cs=tinysrgb&w=800');
+  background-image: url("https://images.pexels.com/photos/3727511/pexels-photo-3727511.jpeg?auto=compress&cs=tinysrgb&w=800");
 }
 .cover.item-e {
-  background-image: url('https://images.pexels.com/photos/5699475/pexels-photo-5699475.jpeg?auto=compress&cs=tinysrgb&w=800');
+  background-image: url("https://images.pexels.com/photos/5699475/pexels-photo-5699475.jpeg?auto=compress&cs=tinysrgb&w=800");
 }
 .cover.item-f {
-  background-image: url('https://images.pexels.com/photos/4491918/pexels-photo-4491918.jpeg?auto=compress&cs=tinysrgb&w=800');
+  background-image: url("https://images.pexels.com/photos/4491918/pexels-photo-4491918.jpeg?auto=compress&cs=tinysrgb&w=800");
 }
 .cover.item-g {
-  background-image: url('https://images.pexels.com/photos/7491564/pexels-photo-7491564.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load');
+  background-image: url("https://images.pexels.com/photos/7491564/pexels-photo-7491564.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load");
 }
 .cover.item-h {
-  background-image: url('https://images.pexels.com/photos/4261800/pexels-photo-4261800.jpeg?auto=compress&cs=tinysrgb&w=800');
+  background-image: url("https://images.pexels.com/photos/4261800/pexels-photo-4261800.jpeg?auto=compress&cs=tinysrgb&w=800");
 }
 
 .cover h1 {
@@ -225,14 +221,13 @@ section {
   color: var(--jungle-green);
 }
 
-.servicesAndroid{
+.servicesAndroid {
   display: none;
   position: relative;
   z-index: 60;
 }
 
 @media screen and (min-width: 320px) and (max-width: 736px) {
-
   .one {
     height: 27rem;
     width: 97%;
@@ -250,12 +245,12 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.16); 
+    background: rgba(0, 0, 0, 0.16);
     z-index: 1;
     border-radius: 0.6vh;
   }
 
-  .androidH1Container{
+  .androidH1Container {
     position: absolute;
     bottom: 0;
     padding: 1rem;
@@ -266,54 +261,54 @@ section {
     z-index: 2;
   }
 
-  .androidH1Container h1{
+  .androidH1Container h1 {
     color: white;
     margin: 0;
     font-weight: 500;
     font-size: 16px;
   }
 
-  .androidH1ContainerIcon{
+  .androidH1ContainerIcon {
     color: white;
   }
 
   .androidOne {
-    background-image: url('https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=800');
-  }
-  
-  .androidTwo {
-    background-image: url('https://images.pexels.com/photos/19579976/pexels-photo-19579976/free-photo-of-smiling-student-in-graduate-gown-shows-her-blue-mortarboard-with-a-tassel.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load');
-  }
-  
-  .androidThree {
-    background-image: url('https://images.pexels.com/photos/16450745/pexels-photo-16450745/free-photo-of-linkedin-page-on-cellphone-screen.jpeg?auto=compress&cs=tinysrgb&w=800');
-  }
-  .androidFour {
-    background-image: url('https://images.pexels.com/photos/3727511/pexels-photo-3727511.jpeg?auto=compress&cs=tinysrgb&w=800');
-  }
-  .androidFive {
-    background-image: url('https://images.pexels.com/photos/5699475/pexels-photo-5699475.jpeg?auto=compress&cs=tinysrgb&w=800');
-  }
-  .androidSix {
-    background-image: url('https://images.pexels.com/photos/4491918/pexels-photo-4491918.jpeg?auto=compress&cs=tinysrgb&w=800');
-  }
-  .androidSeven {
-    background-image: url('https://images.pexels.com/photos/7491564/pexels-photo-7491564.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load');
-  }
-  .androidEight {
-    background-image: url('https://images.pexels.com/photos/4261800/pexels-photo-4261800.jpeg?auto=compress&cs=tinysrgb&w=800');
+    background-image: url("https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=800");
   }
 
-  .card{
+  .androidTwo {
+    background-image: url("https://images.pexels.com/photos/19579976/pexels-photo-19579976/free-photo-of-smiling-student-in-graduate-gown-shows-her-blue-mortarboard-with-a-tassel.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load");
+  }
+
+  .androidThree {
+    background-image: url("https://images.pexels.com/photos/16450745/pexels-photo-16450745/free-photo-of-linkedin-page-on-cellphone-screen.jpeg?auto=compress&cs=tinysrgb&w=800");
+  }
+  .androidFour {
+    background-image: url("https://images.pexels.com/photos/3727511/pexels-photo-3727511.jpeg?auto=compress&cs=tinysrgb&w=800");
+  }
+  .androidFive {
+    background-image: url("https://images.pexels.com/photos/5699475/pexels-photo-5699475.jpeg?auto=compress&cs=tinysrgb&w=800");
+  }
+  .androidSix {
+    background-image: url("https://images.pexels.com/photos/4491918/pexels-photo-4491918.jpeg?auto=compress&cs=tinysrgb&w=800");
+  }
+  .androidSeven {
+    background-image: url("https://images.pexels.com/photos/7491564/pexels-photo-7491564.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load");
+  }
+  .androidEight {
+    background-image: url("https://images.pexels.com/photos/4261800/pexels-photo-4261800.jpeg?auto=compress&cs=tinysrgb&w=800");
+  }
+
+  .card {
     height: 15em;
   }
 
-  .topH1Innder h1{
+  .topH1Innder h1 {
     font-size: 1em;
     font-family: sans-serif;
   }
 
-  .topH1Innder p{
+  .topH1Innder p {
     font-size: 0.7em;
     margin-bottom: 0.7em;
     background-color: transparent;
@@ -326,30 +321,30 @@ section {
     border: 1px solid var(--jungle-green);
   }
 
-  .topH1{
+  .topH1 {
     justify-content: left;
     position: relative !important;
     z-index: 10 !important;
   }
 
-  .topH1Innder{
+  .topH1Innder {
     width: 93%;
     margin: auto;
   }
 
-  section{
+  section {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  .row>*{
+  .row > * {
     padding-left: 0 !important;
     width: 100%;
     padding-right: 0 !important;
   }
 
-  .findJobsContainer{
+  .findJobsContainer {
     padding-top: 2em;
     z-index: 100;
     position: relative;
@@ -357,22 +352,22 @@ section {
     margin-bottom: 2rem;
   }
 
-  section{
+  section {
     width: 88%;
     margin-top: 0em !important;
     margin: 0 auto !important;
   }
 
-  .webSection{
+  .webSection {
     display: none;
   }
 
-  .servicesAndroid{
+  .servicesAndroid {
     display: block;
     padding-left: 0.8rem;
   }
 
-  .carousel-button-group{
+  .carousel-button-group {
     position: absolute;
     top: 1rem;
     right: 0;
@@ -381,7 +376,7 @@ section {
     padding-right: 1rem;
   }
 
-  .carousel-button-group button{
+  .carousel-button-group button {
     background-color: var(--jungle-green);
     color: white;
     z-index: 60 !important;
@@ -392,30 +387,29 @@ section {
     box-shadow: none;
   }
 
-  .react-multiple-carousel__arrow{
+  .react-multiple-carousel__arrow {
     display: none !important;
   }
 
-  .disable{
+  .disable {
     background-color: rgba(83, 130, 138, 0.7) !important;
   }
 
-  .serviceBlurAndroid{
+  .serviceBlurAndroid {
     position: absolute;
     top: 0;
     bottom: -400%;
     left: 0;
     right: 0;
     /* From https://css.glass */
-background: rgba(28, 54, 58, 0.34);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(3.5px);
--webkit-backdrop-filter: blur(3.5px);
+    background: rgba(28, 54, 58, 0.34);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
     z-index: 1900;
   }
 
-  .serviceBlurAndroidCard{
+  .serviceBlurAndroidCard {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -426,12 +420,12 @@ backdrop-filter: blur(3.5px);
     background-color: transparent;
   }
 
-  .serviceCard{
-    height: 80%;
-    width: 85%;
+  .serviceCard {
+    height: 92vh;
+    width: 92%;
     background-color: white;
     position: absolute;
-    top: 53%;
+    top: 11%;
     right: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -441,7 +435,7 @@ backdrop-filter: blur(3.5px);
     justify-content: center;
   }
 
-  .serviceCardInner{
+  .serviceCardInner {
     border: 1px solid rgba(28, 54, 58, 0.2);
     height: 96%;
     width: 95%;
@@ -451,37 +445,37 @@ backdrop-filter: blur(3.5px);
     position: relative;
   }
 
-  .timeCostServiceCard{
+  .timeCostServiceCard {
     position: absolute;
     top: 7%;
     right: 7%;
   }
 
-  .serviceCardInnerLogo{
+  .serviceCardInnerLogo {
     width: 5.5rem;
   }
 
-  .serviceCardInnerContent h1{
+  .serviceCardInnerContent h1 {
     color: var(--jungle-green);
     font-size: 16px;
     font-weight: 500;
   }
 
-  .serviceCardInnerContentPtag{
+  .serviceCardInnerContentPtag {
     font-size: 14px;
     color: var(--jungle-green);
   }
 
-  .topH1InnderServiceCard{
+  .topH1InnderServiceCard {
     width: 100% !important;
   }
 
-  .topH1ServiceCard{
+  .topH1ServiceCard {
     margin: 2rem 0;
     margin-top: 1rem;
   }
 
-  .serviceCardButtonsPurchase{
+  .serviceCardButtonsPurchase {
     background-color: var(--jungle-green);
     color: white;
     padding: 0.3rem 1.4rem;
@@ -492,32 +486,32 @@ backdrop-filter: blur(3.5px);
     transition: all 0.3s;
   }
 
-  .serviceCardButtonsPurchase:hover{
+  .serviceCardButtonsPurchase:hover {
     background-color: whitesmoke;
     color: var(--jungle-green);
     border: 1px solid var(--jungle-green);
   }
 
-  .serviceCardButtons{
+  .serviceCardButtons {
     display: flex;
     justify-content: right;
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 2rem;
     font-size: 15px;
   }
 
-  .timeCostServiceCard span{
+  .timeCostServiceCard span {
     display: flex;
     gap: 0.5rem;
     font-size: 12px;
     color: var(--jungle-green);
   }
 
-  .timeCostServiceCard span p{
+  .timeCostServiceCard span p {
     margin: 0;
   }
 
-  .closeServiceCard{
+  .closeServiceCard {
     background-color: var(--jungle-green);
     border-radius: 50%;
     padding: 0.2rem;
@@ -528,5 +522,9 @@ backdrop-filter: blur(3.5px);
     top: -2%;
     right: -2.7%;
   }
-}
 
+  .viewSBottomPsAndroid{
+    height: 20rem !important;
+    overflow: auto !important;
+  }
+}

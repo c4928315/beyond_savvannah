@@ -1,0 +1,114 @@
+.androidNav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem 1rem;
+  background: rgba(255, 255, 255, 0.29);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: fixed;
+  top: 0;
+  z-index: 2000;
+}
+
+.logoImgAndroidNav {
+  height: 50px;
+}
+
+.navBarAndroidIcon {
+  color: var(--jungle-green);
+}
+
+.sideBarMenu {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  bottom: 0;
+  height: 100vh;
+  width: 100%;
+  /* From https://css.glass */
+  background: rgba(28, 54, 58, 0.47);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  /* border: 1px solid rgba(28, 54, 58, 0.3); */
+  display: flex;
+  justify-content: right;
+  transition: right 0.3s ease-in-out;
+}
+
+.sideBarMenu.active {
+  right: 0; /* Slide into view */
+}
+
+.sideMenuContent {
+  width: 80%;
+  background-color: var(--jungle-green);
+  height: 100vh;
+  padding: 1rem 0rem;
+  overflow: hidden;
+}
+
+/* Close button */
+.closeBtn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #e4c3b1;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.sideMenuContentList ul li{
+  list-style: none;
+  color: #e4c3b1;
+  text-transform: uppercase;
+  padding: 1rem 0.4rem;
+  font-size: 14px;
+  font-weight: 200;
+  border-bottom: 1px solid rgba(228, 195, 177, 0.2);
+}
+
+.sideMenuContentList ul{
+  padding: 1rem;
+}
+
+.sideMenuContentList{
+  margin-top: 4rem;
+}
+
+.resourcesList{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoutSetting{
+  display: flex;
+  flex-direction: column;
+  color: #e4c3b1;
+  gap: 1rem;
+  padding: 1rem;
+  position: absolute;
+  bottom: 5%;
+}
+
+.logoutSetting span{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.logoutSetting span p{
+  font-size: 14px;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 500;
+}

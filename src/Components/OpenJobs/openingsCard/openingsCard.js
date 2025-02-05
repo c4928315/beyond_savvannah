@@ -1,6 +1,7 @@
 import React from "react";
 import "./openingsCard.css";
 import customIcons from "../../../Icons/customIcons";
+import { LuTimer } from "react-icons/lu";
 import { useNavigate } from "react-router-dom";
 
 function OpeningsCard({ data, currentPage }) {
@@ -21,9 +22,41 @@ function OpeningsCard({ data, currentPage }) {
     if (data.perHour) return <>Hour</>;
   };
 
+  const titlleJob = data?.jobName?.toLowerCase()
+
+  console.log("data",data)
+
+  const formatDate = (dateString) => {
+    const date = new Date(dateString);
+    return date.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+  };
+
+  const endData = formatDate(data?.endDate)
+
+  const calculateDaysRemaining = (startDate, endDate) => {
+    const start = new Date(startDate);
+    const end = new Date(endDate);
+  
+    // Calculate the difference in milliseconds
+    const differenceInMs = end.getTime() - start.getTime();
+  
+    // Convert milliseconds to days
+    return Math.ceil(differenceInMs / (1000 * 60 * 60 * 24));
+  };
+  
+  
+
   return (
     <div className="openingCardContainer">
-      <div
+      <div className="leftOpeningCard">
+        <div className="titleDaysRemainder">
+           <h2 className="openingCardTitle" onClick={handleTitleClick}>
+          {titlleJob}
+        </h2>
+        <p>{calculateDaysRemaining(data?.dateCreated, data?.endDate)} D</p>
+        </div>
+       
+        <div
         className="companyLogo"
         style={{
           backgroundImage: `url(${data.imageUrl})`,
@@ -32,38 +65,30 @@ function OpeningsCard({ data, currentPage }) {
           backgroundPosition: "center",
         }}
       ></div>
-      <div className="leftOpeningCard">
-        <h2 className="openingCardTitle" onClick={handleTitleClick}>
-          {data.jobName}
-        </h2>
         <div className="leftOpeningCardIcon">
           <span>
-            <customIcons.home size={17} style={{ color: "#767676" }} />
+            <LuTimer size={20} style={{ color: "#767676" }} />
           </span>
           <span className="openingCardCompany">
-            <p>{data.companyName}</p>
+            <p>{endData}</p>
           </span>
         </div>
-        <div className="leftOpeningCardIcon openingCardCompany">
+        {/* <div className="leftOpeningCardIcon openingCardCompany">
           <span>
             <customIcons.case size={17} style={{ color: "#767676" }} />
           </span>
           <span className="leftOpeningCardTitle">
             <p>{data.jobCategory}</p>
           </span>
-        </div>
-        <div className="leftOpeningCardIcon">
-          <span>
-            <customIcons.money size={17} style={{ color: "#767676" }} />
-          </span>
-          <span className="leftOpeningCardSalary">
-            <p>See Job Detail</p>
-          </span>
+        </div> */}
+        <div className="leftOpeningCardIcon leftOpeningCardButton">
+          <button className="applyNow">Apply Now</button>
+          <button className="viewDetails">Details</button>
         </div>
       </div>
-      <div className="jobDuration">
+      {/* <div className="jobDuration">
         <button onClick={() => navigate("/login")}>{data.jobCategory}</button>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -1,10 +1,9 @@
 .openingCardContainer{
-    height: 220px;
+    height: fit-content;
     width: 400px;
     border-radius: 6px;
     padding: 20px;
-    display: flex;
-    gap: 20px;
+    display: block;
     position: relative;
     margin-bottom: 20px;
     background-color: white;
@@ -19,24 +18,28 @@
 }
 
 .companyLogo{
-    height: 45px;
-    width: 45px;
+    height: 2rem;
+    width: 2rem;
     border-radius: 6px;
+    margin: 0.8rem 0;
 }
 
 .openingCardTitle{
-    font-size: 1.1em;
-    font-weight: 400;
-    letter-spacing: 0.025em;
+    font-size: 1.6rem;
+    font-weight: 500;
     color: var(--jungle-green);
-    width: 264px;
+    width: 90%;
+    margin: 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    text-transform: capitalize;
+    text-transform: capitalize !important;
     cursor: pointer;
     transition: color 0.3s ease-in-out;
-    text-decoration: underline;
+}
+
+.leftOpeningCard h1{
+    text-transform: capitalize !important;
 }
 
 /* .openingCardTitle:hover{
@@ -46,7 +49,7 @@
 .leftOpeningCardIcon{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     margin-top: 1%;
     font-weight: 500;
 }
@@ -56,11 +59,58 @@
 }
 
 .openingCardCompany p, .leftOpeningCardTitle p, .leftOpeningCardSalary p, .leftOpeningCardLocation p{
-    margin: 0;
+    margin: 0 !important;
     width: 100%;
-    font-weight: 300;
-    font-size: 0.9em;
+    font-weight: 400;
+    font-size: 17px;
     color: black;
+    margin-top: 0.3rem !important;
+}
+
+.leftOpeningCardIcon button{
+    background-color: var(--jungle-green);
+    padding: 0.5rem 1rem;
+    border-radius: 0.6vh;
+    border: 1px solid transparent;
+    box-shadow: none;
+    outline: none;
+    color: white;
+    transition: all 0.3s;
+}
+
+.applyNow:hover{
+    background-color: transparent;
+    border: 1px solid var(--jungle-green);
+    color: var(--jungle-green);
+}
+
+.leftOpeningCardIcon .viewDetails{
+    background-color: white;
+    border: 1px solid var(--jungle-green);
+    color: var(--jungle-green);
+    transition: all 0.3s;
+}
+
+.leftOpeningCardIcon .viewDetails:hover{
+    background-color: var(--jungle-green);
+    border: 1px solid transparent;
+    color: white;
+}
+
+.titleDaysRemainder{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.titleDaysRemainder p{
+    font-weight: 500;
+    margin: 0;
+}
+
+.leftOpeningCardButton{
+    margin-top: 1.2rem;
 }
 
 .jobDuration button{
@@ -97,7 +147,7 @@
     }
     
     .openingCardTitle{
-        font-size: 1.5em;
+        font-size: 14px !important;
     }
 
     .leftOpeningCard{
