@@ -13,10 +13,9 @@ root.render(
   <React.StrictMode>
     <Router>
       <LocalProvider>
-        {/* <Routes> */}
-         {/* <Route path="/*" element={<App />} />  */}
-         <App/>
-        {/* </Routes> */}
+        <Routes>
+         <Route path="/*" element={<App />} /> 
+        </Routes>
       </LocalProvider>
     </Router>
   </React.StrictMode>

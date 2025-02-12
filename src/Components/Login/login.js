@@ -49,15 +49,17 @@ function Login({ onLogin }) {
 
       const bearerToken = response?.data?.idToken;
       const user = response?.data?.userNamesDetails
+
+      const newUser = {...user, userId: response?.data?.userId}
       setData(response?.data)
 
-      console.log(response)
+      console.log(newUser)
 
-      setAuth({ user, bearerToken });
+      setAuth({ newUser, bearerToken });
 
       localStorage.setItem(
         "auth",
-        JSON.stringify({ email: userName, user, bearerToken })
+        JSON.stringify(auth)
       );
 
       onLogin();

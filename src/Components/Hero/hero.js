@@ -4,6 +4,7 @@ import customIcons from "../../Icons/customIcons";
 import { Link, useNavigate } from "react-router-dom";
 import { FaPlay } from "react-icons/fa";
 import emailjs from '@emailjs/browser';
+import axios from "axios";
 
 function Hero({ data }) {
   const [searchTerm, setSearchTerm] = useState("");
@@ -15,30 +16,48 @@ function Hero({ data }) {
 
   const user = JSON.parse(localStorage.getItem('auth'))
 
-  console.log(user)
+  console.log(user.newUser?.isStatusSent)
 
-  // useEffect(() => {
-  //   // Check if user is platinum before sending email
-  //   if (user?.email) {
-  //     emailjs
-  //       .sendForm(
-  //         "service_4rwp7hk",  // Replace with actual EmailJS Service ID
-  //         "template_ajo41bp", // Replace with actual EmailJS Template ID
-  //         form.current,
-  //         "yXCn-l9s2PXS6VZjt"   // Replace with actual EmailJS Public Key
-  //       )
-  //       .then(
-  //         (result) => {
-  //           console.log("Email sent:", result.text);
-  //           alert("Email sent successfully!");
-  //         },
-  //         (error) => {
-  //           console.error("Error sending email:", error);
-  //           alert("Failed to send email.");
-  //         }
-  //       );
-  //   }
-  // }, [user]);
+  const updateSentStatus = async (userId) => {
+    try {
+      const response = await axios.post(
+        `https://efmsapi-stagingv2.azurewebsites.net/api/BydUsers/updateSentStatus?userId=${userId}`
+      );
+  
+      return response.data;
+    } catch (error) {
+      console.error("Error updating sent status:", error.response?.data || error.message);
+      throw error.response?.data || "Failed to update sent status";
+    }
+  };
+
+  useEffect(() => {
+    // Check if user is platinum before sending email
+  if (!user.newUser?.isStatusSent){ 
+    if (user.newUser?.isPaid === false) {
+      emailjs
+        .sendForm(
+          "service_4rwp7hk",  // Replace with actual EmailJS Service ID
+          "template_ajo41bp", // Replace with actual EmailJS Template ID
+          form.current,
+          "yXCn-l9s2PXS6VZjt"   // Replace with actual EmailJS Public Key
+        )
+        .then(
+          (result) => {
+            console.log("Email sent:", result.text);
+            updateSentStatus(user?.newUser?.userId)
+          },
+          (error) => {
+            console.error("Error sending email:", error);
+            alert("Failed to send email.");
+          }
+        );
+    }
+  }
+    
+  }, [user]);
+
+
 
   const handleSearch = async () => {
     const filteredResults = data.filter(
@@ -136,9 +155,8 @@ function Hero({ data }) {
       </div>
       <form ref={form} style={{display: "none"}}>
       {/* Hidden fields with email values */}
-      <input type="hidden" name="to_email" value={user.email} />
-      <input type="hidden" name="subject" value="Exclusive Offer for Platinum Members!" />
-      <input type="hidden" name="message" value="Hello, Platinum User!" />
+      <input type="hidden" name="to_email" value={user.newUser.email} />
+      <input type="hidden" name="to_name" value={user.newUser.userName} />
     </form>
 
     </div>
